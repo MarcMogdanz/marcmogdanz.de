@@ -1,0 +1,9 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "react/jsx-one-expression-per-line": "off",
+    "quotes": [2, "double"]
+  },
+  "extends": ["airbnb", "eslint:recommended", "plugin:react/recommended"]
+}
