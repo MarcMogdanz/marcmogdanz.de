@@ -1,8 +1,8 @@
 import React from "react";
-
 import { useStaticQuery, graphql } from "gatsby";
-
 import OnVisible from "react-on-visible";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -10,7 +10,7 @@ const Projects = () => {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 100
-        filter: { fileAbsolutePath: { regex: "/(/project)/gm" } }
+        filter: { fileAbsolutePath: { regex: "/(/project/)/" } }
       ) {
         edges {
           node {
@@ -28,6 +28,25 @@ const Projects = () => {
   `);
 
   const projects = data.allMarkdownRemark.edges.map(edge => edge.node);
+
+  if (projects.length === 0) {
+    return (
+      <div className="column is-full">
+        <div className="tile is-vertical is-parent">
+          <div className="tile is-child box">
+            <h1 className="title has-text-centered">
+              Nothing here yet{" "}
+              <FontAwesomeIcon
+                icon={faHeartBroken}
+                className="icon is-medium"
+                style={{ color: "grey-dark" }}
+              />
+            </h1>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return projects.map(project => (
     <React.Fragment key={project.frontmatter.title}>
