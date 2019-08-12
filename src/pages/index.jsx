@@ -2,7 +2,6 @@ import React from "react";
 import Helmet from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKey, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
-import { faFileCode } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faGitlab, faXing } from "@fortawesome/free-brands-svg-icons";
 
 import Layout from "../components/Layout";
@@ -118,17 +117,6 @@ class IndexPage extends React.Component {
                       <a href="https://" className="has-text-grey-dark">
                         <FontAwesomeIcon
                           icon={faKey}
-                          className="icon is-medium"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="level-item has-text-centered">
-                    <div>
-                      <p className="heading">Resume</p>
-                      <a href="https://" className="has-text-grey-dark">
-                        <FontAwesomeIcon
-                          icon={faFileCode}
                           className="icon is-medium"
                         />
                       </a>
