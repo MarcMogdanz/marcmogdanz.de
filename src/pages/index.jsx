@@ -1,14 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faKey, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faGitlab, faXing } from "@fortawesome/free-brands-svg-icons";
 
 import Layout from "../components/Layout";
 import Modal from "../components/Modal";
 import EmailModal from "../components/EmailModal";
-import BlogPosts from "../components/BlogPosts";
-import Projects from "../components/Projects";
 
 import "../styles/index.css";
 
@@ -113,17 +111,6 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="level-item has-text-centered">
                     <div>
-                      <p className="heading">PGP</p>
-                      <a href="https://" className="has-text-grey-dark">
-                        <FontAwesomeIcon
-                          icon={faKey}
-                          className="icon is-medium"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="level-item has-text-centered">
-                    <div>
                       <p className="heading">Mail</p>
                       <a
                         href="#"
@@ -139,36 +126,6 @@ class IndexPage extends React.Component {
                   </div>
                 </nav>
               </div>
-            </div>
-          </div>
-
-          <section className="hero is-primary">
-            <div className="hero-body">
-              <div className="container">
-                <h1 className="title">Projects</h1>
-                <h2 className="subtitle">Stuff I&apos;ve worked on</h2>
-              </div>
-            </div>
-          </section>
-
-          <div className="container">
-            <div className="columns is-multiline">
-              <Projects />
-            </div>
-          </div>
-
-          <section className="hero is-primary">
-            <div className="hero-body">
-              <div className="container">
-                <h1 className="title">Blog articles</h1>
-                <h2 className="subtitle">Stuff I&apos;ve written</h2>
-              </div>
-            </div>
-          </section>
-
-          <div className="container">
-            <div className="columns is-multiline">
-              <BlogPosts />
             </div>
           </div>
         </Layout>
