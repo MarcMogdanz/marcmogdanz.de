@@ -5,6 +5,7 @@ import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faGitlab, faXing } from "@fortawesome/free-brands-svg-icons";
 
 import Layout from "../components/Layout";
+import Projects from "../components/Projects";
 import Modal from "../components/Modal";
 import EmailModal from "../components/EmailModal";
 
@@ -126,6 +127,23 @@ class IndexPage extends React.Component {
                   </div>
                 </nav>
               </div>
+            </div>
+          </div>
+
+          <section className="hero is-primary">
+            <div className="hero-body">
+              <div className="container">
+                <h1 className="title">Projects</h1>
+                <h2 className="subtitle">
+                  Everything I&apos;ve touched over the years
+                </h2>
+              </div>
+            </div>
+          </section>
+
+          <div className="container">
+            <div className="columns is-multiline">
+              <Projects />
             </div>
           </div>
         </Layout>
