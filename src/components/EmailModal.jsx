@@ -4,6 +4,28 @@ const EmailModal = () => (
   <form method="POST" action="https://formspree.io/contact2019@marcmogdanz.de">
     <div className="field is-horizontal">
       <div className="field-label is-normal">
+        <label className="label" htmlFor="nameInput">
+          Your name
+        </label>
+      </div>
+      <div className="field-body">
+        <div className="field">
+          <div className="control">
+            <input
+              className="input"
+              id="nameInput"
+              name="name"
+              type="text"
+              placeholder="Steve Jobs"
+            />
+          </div>
+          <p className="help">This field is required.</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
         <label className="label" htmlFor="emailInput">
           Your email address
         </label>
