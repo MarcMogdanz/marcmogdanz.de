@@ -1,14 +1,36 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout";
+
+import "../styles/404.css";
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div
+      className="level"
+      style={{
+        width: "100%",
+        height: "100%",
+        minHeight: "100vh",
+        position: "relative",
+      }}
+    >
+      <div
+        className="level-item has-text-centered"
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <div>
+          <h1 className="subtitle is-1 not-found">404</h1>
+          <h5 className="subtitle is-5 not-found-sub">
+            That didn&apos;t work out, did it?
+          </h5>
+        </div>
+      </div>
+    </div>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
