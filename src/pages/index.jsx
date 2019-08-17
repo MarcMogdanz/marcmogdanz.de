@@ -135,7 +135,7 @@ class IndexPage extends React.Component {
               <div className="container">
                 <h1 className="title">Projects</h1>
                 <h2 className="subtitle">
-                  Everything I&apos;ve touched over the years
+                  Everything I&apos;ve open sourced over the years
                 </h2>
               </div>
             </div>
