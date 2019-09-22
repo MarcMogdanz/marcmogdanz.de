@@ -1,7 +1,8 @@
 import React from "react";
 
 const EmailModal = () => (
-  <form method="POST" action="https://formspree.io/contact2019@marcmogdanz.de">
+  <form method="POST" name="contact" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
     <div className="field is-horizontal">
       <div className="field-label is-normal">
         <label className="label" htmlFor="nameInput">
