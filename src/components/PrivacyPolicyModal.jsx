@@ -51,9 +51,9 @@ const PrivacyPolicyModal = () => (
       <span>Germany</span>
     </p>
     <p className="margin-10">
-      <span>Telephone: +49 15255833211</span>
+      <span>Telephone: +49 15678 718150</span>
       <br />
-      <span>E-Mail: contact2019@marcmogdanz.de</span>
+      <span>E-Mail: trash@marcmogdanz.de</span>
     </p>
     <p className="margin-10">
       The controller&apos;s data protection officer is:
