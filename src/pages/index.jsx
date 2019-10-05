@@ -58,7 +58,7 @@ class IndexPage extends React.Component {
             >
               <div>
                 <h1 className="subtitle is-1 name">Marc Mogdanz</h1>
-                <h5 className="subtitle is-5 job-title">Backend Developer</h5>
+                <h5 className="subtitle is-5 job-title">Software Developer</h5>
 
                 <nav
                   className="level is-mobile"
