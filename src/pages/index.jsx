@@ -2,7 +2,12 @@ import React from "react";
 import Helmet from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faGitlab, faXing } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faGitlab,
+  faXing,
+  faTelegramPlane,
+} from "@fortawesome/free-brands-svg-icons";
 
 import Layout from "../components/Layout";
 import Projects from "../components/Projects";
@@ -105,6 +110,20 @@ class IndexPage extends React.Component {
                       >
                         <FontAwesomeIcon
                           icon={faXing}
+                          className="icon is-medium"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="level-item has-text-centered">
+                    <div>
+                      <p className="heading">Telegram</p>
+                      <a
+                        href="http://t.me/ItsMarc"
+                        className="has-text-grey-dark"
+                      >
+                        <FontAwesomeIcon
+                          icon={faTelegramPlane}
                           className="icon is-medium"
                         />
                       </a>
