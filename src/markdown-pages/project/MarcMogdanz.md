@@ -6,7 +6,7 @@ tags:
   - JavaScript
   - Gatsby
   - React
-active: true
+active: false
 ---
 
 [Open Source on GitHub](https://github.com/MarcMogdanz/marcmogdanz.de)

@@ -8,7 +8,7 @@ tags:
   - Chrome
   - Firefox
   - XING
-active: true
+active: false
 ---
 
 [Open Source on GitHub](https://github.com/MarcMogdanz/XING2JSON)
