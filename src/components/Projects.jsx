@@ -49,12 +49,15 @@ const Projects = () => {
     );
   }
 
-  return projects.map(project => (
+  return projects.map((project, index) => (
     <React.Fragment key={project.frontmatter.title}>
       <OnVisible
         percent={65}
         className="column is-half invisble"
-        visibleClassName="visible animated slideInLeft"
+        // based on project index let card slide in from left or right
+        visibleClassName={`visible animated ${
+          index % 2 ? "slideInRight" : "slideInLeft"
+        }`}
         wrappingElement="div"
       >
         <div className="tile is-vertical is-parent">
