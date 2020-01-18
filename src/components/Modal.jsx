@@ -17,7 +17,12 @@ const Modal = props => (
       </header>
       <section className="modal-card-body">{props.children}</section>
       <footer className="modal-card-foot">
-        <button className="button" type="button" onClick={props.closeHandler}>
+        <button
+          className="button"
+          type="button"
+          style={{ fontFamily: "JetBrainsMono" }}
+          onClick={props.closeHandler}
+        >
           Close
         </button>
       </footer>
