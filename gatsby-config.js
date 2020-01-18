@@ -34,6 +34,9 @@ module.exports = {
         google: {
           families: ["Lacquer", "Montserrat"],
         },
+        custom: {
+          families: ["JetBrainsMono"], // must be loaded via .css
+        },
       },
     },
     {
