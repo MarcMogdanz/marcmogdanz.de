@@ -40,6 +40,7 @@ class Layout extends React.Component {
       <>
         <Helmet>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Marc Mogdanz</title>
         </Helmet>
 
         {!this.state.legalDisclosureModalHidden && (

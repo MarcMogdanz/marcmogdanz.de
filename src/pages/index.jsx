@@ -1,5 +1,4 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -35,10 +34,6 @@ class IndexPage extends React.Component {
     return (
       <>
         <Layout>
-          <Helmet>
-            <title>Marc Mogdanz</title>
-          </Helmet>
-
           {!this.state.emailModalHidden && (
             <Modal title="Contact" closeHandler={() => this.toggleEmailModal()}>
               <EmailModal />
