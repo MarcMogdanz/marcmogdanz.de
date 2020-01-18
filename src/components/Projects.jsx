@@ -83,6 +83,7 @@ const Projects = () => {
 
             <hr />
 
+            {/* eslint-disable-next-line */}
             <div dangerouslySetInnerHTML={{ __html: project.html }} />
           </div>
         </div>
