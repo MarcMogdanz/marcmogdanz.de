@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
                 >
                   <div className="level-item has-text-centered">
                     <div>
-                      <p className="heading">GitHub</p>
+                      <p className="heading social-icon">GitHub</p>
                       <a
                         href="https://github.com/MarcMogdanz"
                         className="has-text-grey-dark"
@@ -89,7 +89,7 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="level-item has-text-centered">
                     <div>
-                      <p className="heading">GitLab</p>
+                      <p className="heading social-icon">GitLab</p>
                       <a
                         href="https://gitlab.com/MarcMogdanz"
                         className="has-text-grey-dark"
@@ -103,7 +103,7 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="level-item has-text-centered">
                     <div>
-                      <p className="heading">Xing</p>
+                      <p className="heading social-icon">Xing</p>
                       <a
                         href="https://xing.com/profile/Marc_Mogdanz"
                         className="has-text-grey-dark"
@@ -117,7 +117,7 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="level-item has-text-centered">
                     <div>
-                      <p className="heading">Telegram</p>
+                      <p className="heading social-icon">Telegram</p>
                       <a
                         href="http://t.me/ItsMarc"
                         className="has-text-grey-dark"
@@ -131,7 +131,7 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="level-item has-text-centered">
                     <div>
-                      <p className="heading">Mail</p>
+                      <p className="heading social-icon">Mail</p>
                       <a
                         href="#"
                         className="has-text-grey-dark"

@@ -1,7 +1,9 @@
 .not-found {
-  font-family: Lacquer, sans-serif;
+  font-family: JetBrainsMono, sans-serif;
+  font-style: normal;
 }
 
 .not-found-sub {
-  font-family: Montserrat, sans-serif;
+  font-family: JetBrainsMono, sans-serif;
+  font-style: italic;
 }

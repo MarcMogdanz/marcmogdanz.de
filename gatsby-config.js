@@ -31,9 +31,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
-        google: {
-          families: ["Lacquer", "Montserrat"],
-        },
         custom: {
           families: ["JetBrainsMono"], // must be loaded via .css
         },
