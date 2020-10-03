@@ -5,7 +5,7 @@ import {
   faGithub,
   faGitlab,
   faXing,
-  faTelegramPlane,
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Layout from "../components/Layout";
@@ -112,13 +112,13 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="level-item has-text-centered">
                     <div>
-                      <p className="heading social-icon">Telegram</p>
+                      <p className="heading social-icon">LinkedIn</p>
                       <a
-                        href="http://t.me/ItsMarc"
+                        href="https://linkedin.com/in/marc-mogdanz/"
                         className="has-text-grey-dark"
                       >
                         <FontAwesomeIcon
-                          icon={faTelegramPlane}
+                          icon={faLinkedinIn}
                           className="icon is-medium"
                         />
                       </a>
