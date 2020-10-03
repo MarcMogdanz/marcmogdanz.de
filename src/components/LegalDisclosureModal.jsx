@@ -4,15 +4,11 @@ const LegalDisclosureModal = () => (
   <>
     <h5 className="title is-5">Information in accordance with Section 5 TMG</h5>
     <p>
-      Marc Mogdanz <br />
-      Oberntorwall 12 <br />
-      33602 Bielefeld
+      <img src="/address.png" alt="test" style={{ height: "60px" }} />
     </p>
     <h6 className="title is-6 margin-10">Contact Information</h6>
     <p>
-      Telephone: +49 15678 718150
-      <br />
-      E-Mail: trash@marcmogdanz.de
+      <img src="/contact.png" alt="test" style={{ height: "40px" }} />
     </p>
     <h5 className="title is-5 margin-10">Disclaimer</h5>
     <h6 className="title is-6">Accountability for content</h6>
