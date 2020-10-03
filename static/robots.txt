@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /address.png
+Disallow: /contact.png
