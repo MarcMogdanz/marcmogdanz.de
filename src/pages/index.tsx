@@ -25,7 +25,7 @@ class IndexPage extends React.Component {
   }
 
   toggleEmailModal() {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       emailModalHidden: !prevState.emailModalHidden,
     }));
   }
