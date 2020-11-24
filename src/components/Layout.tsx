@@ -1,16 +1,14 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { Link } from "gatsby";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-
-import Modal from "./Modal";
-import LegalDisclosureModal from "./LegalDisclosureModal";
-import PrivacyPolicyModal from "./PrivacyPolicyModal";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css";
 import "bulma/css/bulma.css";
+import { Link } from "gatsby";
+import React from "react";
+import Helmet from "react-helmet";
 import "../styles/Layout.css";
+import LegalDisclosureModal from "./LegalDisclosureModal";
+import Modal from "./Modal";
+import PrivacyPolicyModal from "./PrivacyPolicyModal";
 
 interface LayoutProps {
   children: React.ReactNode;

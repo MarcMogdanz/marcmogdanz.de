@@ -1,18 +1,16 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faGitlab,
-  faXing,
   faLinkedinIn,
+  faXing,
 } from "@fortawesome/free-brands-svg-icons";
-
-import Layout from "../components/Layout";
-import Projects from "../components/Projects";
-import Modal from "../components/Modal";
+import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import EmailModal from "../components/EmailModal";
-
+import Layout from "../components/Layout";
+import Modal from "../components/Modal";
+import Projects from "../components/Projects";
 import "../styles/index.css";
 
 interface IndexPageProps {

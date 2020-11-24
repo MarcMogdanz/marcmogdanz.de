@@ -1,7 +1,5 @@
 import React from "react";
-
 import Layout from "../components/Layout";
-
 import "../styles/404.css";
 
 const NotFoundPage = (): JSX.Element => (
