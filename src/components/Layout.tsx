@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,8 +12,17 @@ import "animate.css";
 import "bulma/css/bulma.css";
 import "../styles/Layout.css";
 
-class Layout extends React.Component {
-  constructor(props) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+interface LayoutState {
+  legalDisclosureModalHidden: boolean;
+  privacyPolicyModalHidden: boolean;
+}
+
+class Layout extends React.Component<LayoutProps, LayoutState> {
+  constructor(props: { children: React.ReactNode }) {
     super(props);
 
     this.state = {
@@ -23,19 +31,22 @@ class Layout extends React.Component {
     };
   }
 
-  toggleLegalDisclosureModal() {
-    this.setState(prevState => ({
+  toggleLegalDisclosureModal(): void {
+    this.setState((prevState) => ({
       legalDisclosureModalHidden: !prevState.legalDisclosureModalHidden,
     }));
   }
 
-  togglePrivacyPolicyModal() {
-    this.setState(prevState => ({
+  togglePrivacyPolicyModal(): void {
+    this.setState((prevState) => ({
       privacyPolicyModalHidden: !prevState.privacyPolicyModalHidden,
     }));
   }
 
-  render() {
+  render(): React.ReactNode {
+    const { children } = this.props;
+    const { legalDisclosureModalHidden, privacyPolicyModalHidden } = this.state;
+
     return (
       <>
         <Helmet>
@@ -43,7 +54,7 @@ class Layout extends React.Component {
           <title>Marc Mogdanz</title>
         </Helmet>
 
-        {!this.state.legalDisclosureModalHidden && (
+        {!legalDisclosureModalHidden && (
           <Modal
             title="Legal Disclosure"
             closeHandler={() => this.toggleLegalDisclosureModal()}
@@ -52,7 +63,7 @@ class Layout extends React.Component {
           </Modal>
         )}
 
-        {!this.state.privacyPolicyModalHidden && (
+        {!privacyPolicyModalHidden && (
           <Modal
             title="Privacy Policy"
             closeHandler={() => this.togglePrivacyPolicyModal()}
@@ -61,7 +72,7 @@ class Layout extends React.Component {
           </Modal>
         )}
 
-        {this.props.children}
+        {children}
 
         <footer className="footer">
           <div className="content has-text-centered">
@@ -73,21 +84,26 @@ class Layout extends React.Component {
               <a href="https://netlify.com/">Netlify</a>.
             </p>
             <p>
-              <a
-                href="#"
-                className="has-text-grey-dark"
-                onClick={this.toggleLegalDisclosureModal.bind(this)}
-              >
-                Legal Disclosure
-              </a>{" "}
-              &{" "}
-              <a
-                href="#"
-                className="has-text-grey-dark"
-                onClick={this.togglePrivacyPolicyModal.bind(this)}
-              >
-                Privacy Policy
-              </a>
+              <div className="field has-addons has-addons-centered">
+                <p className="control">
+                  <button
+                    type="button"
+                    className="button"
+                    onClick={this.toggleLegalDisclosureModal.bind(this)}
+                  >
+                    Legal Disclosure
+                  </button>
+                </p>
+                <p className="control">
+                  <button
+                    type="button"
+                    className="button has-text-grey-dark"
+                    onClick={this.togglePrivacyPolicyModal.bind(this)}
+                  >
+                    Privacy Policy
+                  </button>
+                </p>
+              </div>
             </p>
           </div>
         </footer>
@@ -95,9 +111,5 @@ class Layout extends React.Component {
     );
   }
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

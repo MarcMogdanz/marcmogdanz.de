@@ -1,27 +1,34 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-const Modal = props => (
+const Modal = ({
+  title,
+  children,
+  closeHandler,
+}: {
+  title: string;
+  children: React.ReactNode;
+  closeHandler: () => void;
+}): JSX.Element => (
   <div className="modal is-active">
     <div className="modal-background" />
     <div className="modal-card">
       <header className="modal-card-head">
-        <p className="modal-card-title">{props.title}</p>
+        <p className="modal-card-title">{title}</p>
 
         <button
           className="delete"
           type="button"
           aria-label="close"
-          onClick={props.closeHandler}
+          onClick={closeHandler}
         />
       </header>
-      <section className="modal-card-body">{props.children}</section>
+      <section className="modal-card-body">{children}</section>
       <footer className="modal-card-foot">
         <button
           className="button"
           type="button"
           style={{ fontFamily: "JetBrainsMono" }}
-          onClick={props.closeHandler}
+          onClick={closeHandler}
         >
           Close
         </button>
@@ -30,13 +37,4 @@ const Modal = props => (
   </div>
 );
 
-Modal.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-  closeHandler: PropTypes.func.isRequired,
-};
-Modal;
 export default Modal;

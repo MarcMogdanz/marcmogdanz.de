@@ -4,7 +4,18 @@ import OnVisible from "react-on-visible";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
 
-const Projects = () => {
+interface Project {
+  frontmatter: {
+    title: string;
+    subtitle: string;
+    active: boolean;
+    date: string;
+    tags: string[];
+  };
+  html: string;
+}
+
+const Projects = (): JSX.Element => {
   const data = useStaticQuery(graphql`
     query ProjectsQuery {
       allMarkdownRemark(
@@ -28,7 +39,9 @@ const Projects = () => {
     }
   `);
 
-  const projects = data.allMarkdownRemark.edges.map(edge => edge.node);
+  const projects: Project[] = data.allMarkdownRemark.edges.map(
+    (edge: { node: Project }) => edge.node
+  );
 
   if (projects.length === 0) {
     return (
@@ -49,7 +62,7 @@ const Projects = () => {
     );
   }
 
-  return projects.map((project, index) => (
+  const jsxProjects = projects.map((project: Project, index: number) => (
     <React.Fragment key={project.frontmatter.title}>
       <OnVisible
         percent={65}
@@ -58,7 +71,6 @@ const Projects = () => {
         visibleClassName={`visible animated ${
           index % 2 ? "slideInRight" : "slideInLeft"
         }`}
-        wrappingElement="div"
       >
         <div className="tile is-vertical is-parent">
           <div className="tile is-child box">
@@ -74,7 +86,7 @@ const Projects = () => {
               {!project.frontmatter.active && (
                 <span className="tag is-warning">Finished</span>
               )}
-              {project.frontmatter.tags.map(tag => (
+              {project.frontmatter.tags.map((tag) => (
                 <span className="tag" key={tag}>
                   {tag}
                 </span>
@@ -90,6 +102,8 @@ const Projects = () => {
       </OnVisible>
     </React.Fragment>
   ));
+
+  return <>{jsxProjects}</>;
 };
 
 export default Projects;

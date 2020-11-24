@@ -15,26 +15,36 @@ import EmailModal from "../components/EmailModal";
 
 import "../styles/index.css";
 
-class IndexPage extends React.Component {
-  constructor() {
-    super();
+interface IndexPageProps {
+  children: React.ReactNode;
+}
+
+interface IndexPageState {
+  emailModalHidden: boolean;
+}
+
+class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
+  constructor(props: IndexPageProps) {
+    super(props);
 
     this.state = {
       emailModalHidden: true,
     };
   }
 
-  toggleEmailModal() {
+  toggleEmailModal(): void {
     this.setState((prevState) => ({
       emailModalHidden: !prevState.emailModalHidden,
     }));
   }
 
-  render() {
+  render(): React.ReactNode {
+    const { emailModalHidden } = this.state;
+
     return (
       <>
         <Layout>
-          {!this.state.emailModalHidden && (
+          {!emailModalHidden && (
             <Modal title="Contact" closeHandler={() => this.toggleEmailModal()}>
               <EmailModal />
             </Modal>
@@ -127,16 +137,16 @@ class IndexPage extends React.Component {
                   <div className="level-item has-text-centered">
                     <div>
                       <p className="heading social-icon">Mail</p>
-                      <a
-                        href="#"
-                        className="has-text-grey-dark"
+                      <button
+                        type="button"
+                        className="button is-link is-light has-background-light has-text-grey-dark"
                         onClick={this.toggleEmailModal.bind(this)}
                       >
                         <FontAwesomeIcon
                           icon={faEnvelopeOpenText}
                           className="icon is-medium"
                         />
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </nav>
