@@ -16,3 +16,4 @@ FROM nginx:stable-alpine as app
 
 COPY nginx.conf /etc/nginx/
 COPY --from=builder /app/public /www/data
+COPY static/ /www/data
