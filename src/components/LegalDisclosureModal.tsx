@@ -1,6 +1,6 @@
 import React from "react";
 
-const LegalDisclosureModal = () => (
+const LegalDisclosureModal = (): JSX.Element => (
   <>
     <h5 className="title is-5">Information in accordance with Section 5 TMG</h5>
     <p>

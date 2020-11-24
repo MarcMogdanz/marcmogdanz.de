@@ -1,6 +1,6 @@
 import React from "react";
 
-const PrivacyPolicyModal = () => (
+const PrivacyPolicyModal = (): JSX.Element => (
   <>
     <p>
       Personal data (usually referred to just as &quot;data&quot; below) will
@@ -69,7 +69,7 @@ const PrivacyPolicyModal = () => (
       users and data subjects have the right
     </p>
     <div className="content">
-      <ul type="disc" className="margin-10">
+      <ul className="margin-10">
         <li>
           to confirmation of whether data concerning them is being processed,
           information about the data being processed, further information about
@@ -320,7 +320,7 @@ const PrivacyPolicyModal = () => (
     </p>
     <p className="margin-10">Google offers detailed information at</p>
     <div className="content">
-      <ul type="disc" className="margin-10">
+      <ul className="margin-10">
         <li>
           <a
             href="https://adssettings.google.com/authenticated"
@@ -374,7 +374,7 @@ const PrivacyPolicyModal = () => (
       browser. Access data includes
     </p>
     <div className="content">
-      <ul type="disc" className="margin-10">
+      <ul className="margin-10">
         <li>your IP address;</li>
         <li>the page(s) on our site that you access;</li>
         <li>type and version of internet browser you are using;</li>

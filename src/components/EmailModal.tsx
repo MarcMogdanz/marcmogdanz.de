@@ -1,6 +1,6 @@
 import React from "react";
 
-const EmailModal = () => (
+const EmailModal = (): JSX.Element => (
   <form method="POST" name="contact" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     <div className="field is-horizontal">

@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 
 import "../styles/404.css";
 
-const NotFoundPage = () => (
+const NotFoundPage = (): JSX.Element => (
   <Layout>
     <div
       className="level"
