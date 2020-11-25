@@ -14,7 +14,8 @@
   "rules": {
     "react/require-default-props": 0,
     "no-console": "error",
-    "jsx-a11y/label-has-associated-control": "off"
+    "jsx-a11y/label-has-associated-control": "off",
+    "no-nested-ternary": "off"
   },
   "extends": [
     "airbnb-typescript",
