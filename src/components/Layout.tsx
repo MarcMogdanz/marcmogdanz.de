@@ -79,7 +79,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
               <Link to="/404">Bielefeld</Link>. Built with{" "}
               <a href="https://gatsbyjs.org/">Gatsby</a> and{" "}
               <a href="https://reactjs.org/">React</a>. Hosted on{" "}
-              <a href="https://netlify.com/">Netlify</a>.
+              <a href="https://vercel.com/">Vercel</a>.
             </p>
             <p>
               <div className="field has-addons has-addons-centered">
