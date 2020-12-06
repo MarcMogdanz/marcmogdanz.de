@@ -18,6 +18,7 @@ module.exports = {
         codegen: false,
       },
     },
+    "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-filesystem",
