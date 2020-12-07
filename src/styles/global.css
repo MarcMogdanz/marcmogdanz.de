@@ -6,3 +6,17 @@
   font-family: JetBrainsMono;
   src: url("/JetBrainsMono.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: Shrimp;
+  src: url("/SHRIMP.ttf") format("truetype");
+}
+
+/*
+  add a separate class for the font as I don't want
+  to add it to tailwind's serif fonts because it's
+  only used in the sidebar
+*/
+.font-shrimp {
+  font-family: Shrimp, sans-serif;
+}
