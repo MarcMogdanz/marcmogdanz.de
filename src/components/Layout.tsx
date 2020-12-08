@@ -1,113 +1,149 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "animate.css";
-import "bulma/css/bulma.css";
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
-import Helmet from "react-helmet";
-import "../styles/Layout.css";
-import LegalDisclosureModal from "./LegalDisclosureModal";
-import Modal from "./Modal";
-import PrivacyPolicyModal from "./PrivacyPolicyModal";
+import { Helmet } from "react-helmet";
+import { NavigationItems, SocialProfiles } from "../constants";
+import { StyledLink } from "./Link";
 
-interface LayoutProps {
+const SocialProfile = ({
+  link,
+  icon,
+}: {
+  link: string;
+  icon: IconProp;
+}): JSX.Element => (
+  <div className="px-2 transition duration-300 transform hover:-translate-y-3 hover:scale-150">
+    <StyledLink href={link}>
+      <FontAwesomeIcon icon={icon} size="2x" color="white" />
+    </StyledLink>
+  </div>
+);
+
+const MenuItem = ({ name, to }: { name: string; to: string }): JSX.Element => (
+  <Link
+    to={to}
+    className="mx-2 border-solid border-b-4 border-transparent hover:border-primary"
+  >
+    {name}
+  </Link>
+);
+
+// TODO: remove border under header/navigation links
+
+const Layout = ({
+  page,
+  children,
+}: {
+  page: string;
   children: React.ReactNode;
-}
-
-interface LayoutState {
-  legalDisclosureModalHidden: boolean;
-  privacyPolicyModalHidden: boolean;
-}
-
-class Layout extends React.Component<LayoutProps, LayoutState> {
-  constructor(props: { children: React.ReactNode }) {
-    super(props);
-
-    this.state = {
-      legalDisclosureModalHidden: true,
-      privacyPolicyModalHidden: true,
+}): JSX.Element => {
+  const {
+    site: {
+      siteMetadata: { title },
+    },
+  }: {
+    site: {
+      siteMetadata: {
+        title: string;
+      };
     };
-  }
+  } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  );
 
-  toggleLegalDisclosureModal(): void {
-    this.setState((prevState) => ({
-      legalDisclosureModalHidden: !prevState.legalDisclosureModalHidden,
-    }));
-  }
+  return (
+    <>
+      <Helmet>
+        <title>
+          {title} - {page}
+        </title>
+      </Helmet>
 
-  togglePrivacyPolicyModal(): void {
-    this.setState((prevState) => ({
-      privacyPolicyModalHidden: !prevState.privacyPolicyModalHidden,
-    }));
-  }
+      <div className="flex flex-col md:flex-row min-h-screen">
+        {/* sidebar */}
+        <div className="flex-shrink-0 w-screen py-8 md:w-96 md:h-screen md:top-0 md:sticky md:p-4 md:pt-8 bg-primary">
+          <Link to="/">
+            <h1 className="text-center text-white text-5xl font-shrimp tracking-wide">
+              <div>MARC</div>
+              <div>MOGDANZ</div>
+            </h1>
+          </Link>
 
-  render(): React.ReactNode {
-    const { children } = this.props;
-    const { legalDisclosureModalHidden, privacyPolicyModalHidden } = this.state;
-
-    return (
-      <>
-        <Helmet>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Marc Mogdanz</title>
-        </Helmet>
-
-        {!legalDisclosureModalHidden && (
-          <Modal
-            title="Legal Disclosure"
-            closeHandler={() => this.toggleLegalDisclosureModal()}
-          >
-            <LegalDisclosureModal />
-          </Modal>
-        )}
-
-        {!privacyPolicyModalHidden && (
-          <Modal
-            title="Privacy Policy"
-            closeHandler={() => this.togglePrivacyPolicyModal()}
-          >
-            <PrivacyPolicyModal />
-          </Modal>
-        )}
-
-        {children}
-
-        <footer className="footer">
-          <div className="content has-text-centered">
-            <p>
-              Made with <FontAwesomeIcon icon={faHeart} /> in{" "}
-              <Link to="/404">Bielefeld</Link>. Built with{" "}
-              <a href="https://gatsbyjs.org/">Gatsby</a> and{" "}
-              <a href="https://reactjs.org/">React</a>. Hosted on{" "}
-              <a href="https://vercel.com/">Vercel</a>.
-            </p>
-            <p>
-              <div className="field has-addons has-addons-centered">
-                <p className="control">
-                  <button
-                    type="button"
-                    className="button"
-                    onClick={this.toggleLegalDisclosureModal.bind(this)}
-                  >
-                    Legal Disclosure
-                  </button>
-                </p>
-                <p className="control">
-                  <button
-                    type="button"
-                    className="button has-text-grey-dark"
-                    onClick={this.togglePrivacyPolicyModal.bind(this)}
-                  >
-                    Privacy Policy
-                  </button>
-                </p>
-              </div>
-            </p>
+          <div className="flex flex-row justify-center pt-10">
+            {SocialProfiles.map((profile) => (
+              <SocialProfile
+                link={profile.link}
+                icon={profile.icon}
+                key={profile.link}
+              />
+            ))}
           </div>
-        </footer>
-      </>
-    );
-  }
-}
 
+          <div className="absolute inset-x-0 bottom-0 hidden md:flex">
+            <footer className="m-auto mb-2 text-center font-mono md:text-white">
+              {/* footer in sidebar */}
+              <>
+                <div>
+                  Made with{" "}
+                  <FontAwesomeIcon icon={faHeart} className="text-red-300" /> in
+                  Bielefeld
+                </div>
+                <div>
+                  <Link to="/credits">Credits</Link>
+                </div>
+                <div>
+                  <Link to="/legal">Legal Disclosure</Link> and{" "}
+                  <Link to="/privacy">Privacy Policy</Link>
+                </div>
+              </>
+            </footer>
+          </div>
+        </div>
+
+        {/* content */}
+        <div className="flex flex-col flex-grow min-h-full justify-between bg-background">
+          <header className="p-4">
+            <div className="flex justify-center font-mono">
+              {NavigationItems.map((item) => (
+                <MenuItem name={item.name} to={item.to} key={item.name} />
+              ))}
+            </div>
+          </header>
+
+          <main className="p-4 mb-auto h-auto border-t-2 border-solid border-primary">
+            {children}
+          </main>
+
+          <footer className="text-center font-mono p-4 flex flex-col md:hidden ">
+            {/* footer in main page */}
+            <>
+              <div>
+                Made with{" "}
+                <FontAwesomeIcon icon={faHeart} className="text-red-300" /> in
+                Bielefeld
+              </div>
+              <div>
+                <Link to="/credits">Credits</Link>
+              </div>
+              <div>
+                <Link to="/legal">Legal Disclosure</Link> and{" "}
+                <Link to="/privacy">Privacy Policy</Link>
+              </div>
+            </>
+          </footer>
+        </div>
+      </div>
+    </>
+  );
+};
 export default Layout;

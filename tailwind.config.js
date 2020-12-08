@@ -6,6 +6,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        primary: "#80AEC9",
+        "primary-dark": "#3d718f",
+        background: "#f5f5f5",
+      },
       fontFamily: {
         mono: ["JetBrainsMono", ...defaultTheme.fontFamily.mono],
       },
