@@ -1,177 +1,101 @@
-import {
-  faGithub,
-  faGitlab,
-  faLinkedinIn,
-  faXing,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
-import EmailModal from "../components/EmailModal";
-import Layout from "../components/Layout";
-import Modal from "../components/Modal";
-import Projects from "../components/Projects";
-import "../styles/index.css";
+import { Helmet } from "react-helmet";
+import { LocalStyledLink, StyledLink } from "../components/Link";
+import { NavigationItems, SocialProfiles } from "../constants";
 
-interface IndexPageProps {
-  children: React.ReactNode;
-}
+const SocialProfile = ({
+  link,
+  icon,
+}: {
+  link: string;
+  icon: IconProp;
+}): JSX.Element => (
+  <div className="px-3 transition duration-300 transform hover:xtranslate-y-3 hover:scale-125">
+    <StyledLink href={link}>
+      <FontAwesomeIcon
+        icon={icon}
+        size="3x"
+        className="transition duration-300 text-white"
+      />
+    </StyledLink>
+  </div>
+);
 
-interface IndexPageState {
-  emailModalHidden: boolean;
-}
+const MenuItem = ({ name, to }: { name: string; to: string }): JSX.Element => (
+  <Link
+    to={to}
+    className="mx-2 border-solid border-b-4 border-transparent hover:border-primary"
+  >
+    {name}
+  </Link>
+);
 
-class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
-  constructor(props: IndexPageProps) {
-    super(props);
-
-    this.state = {
-      emailModalHidden: true,
+const IndexPage = (): JSX.Element => {
+  const {
+    site: {
+      siteMetadata: { title },
+    },
+  }: {
+    site: {
+      siteMetadata: {
+        title: string;
+      };
     };
-  }
+  } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  );
 
-  toggleEmailModal(): void {
-    this.setState((prevState) => ({
-      emailModalHidden: !prevState.emailModalHidden,
-    }));
-  }
+  return (
+    <>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
 
-  render(): React.ReactNode {
-    const { emailModalHidden } = this.state;
+      <div className="flex flex-col w-screen h-screen bg-background relative">
+        <div className="m-auto">
+          <div className="text-5xl font-mono italic">Marc Mogdanz</div>
 
-    return (
-      <>
-        <Layout>
-          {!emailModalHidden && (
-            <Modal title="Contact" closeHandler={() => this.toggleEmailModal()}>
-              <EmailModal />
-            </Modal>
-          )}
-
-          <div
-            className="level"
-            style={{
-              width: "100%",
-              height: "100%",
-              minHeight: "100vh",
-              position: "relative",
-            }}
-          >
-            <div
-              className="level-item has-text-centered"
-              style={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <div>
-                <h1 className="subtitle is-1 name">Marc Mogdanz</h1>
-                <h5 className="subtitle is-5 job-title">Software Developer</h5>
-
-                <nav
-                  className="level is-mobile"
-                  style={{
-                    marginTop: "5%",
-                    marginBottom: "5%",
-                  }}
-                >
-                  <div className="level-item has-text-centered">
-                    <div>
-                      <p className="heading social-icon">GitHub</p>
-                      <a
-                        href="https://github.com/MarcMogdanz"
-                        className="has-text-grey-dark"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGithub}
-                          className="icon is-medium"
-                          style={{ color: "grey-dark" }}
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="level-item has-text-centered">
-                    <div>
-                      <p className="heading social-icon">GitLab</p>
-                      <a
-                        href="https://gitlab.com/MarcMogdanz"
-                        className="has-text-grey-dark"
-                      >
-                        <FontAwesomeIcon
-                          icon={faGitlab}
-                          className="icon is-medium"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="level-item has-text-centered">
-                    <div>
-                      <p className="heading social-icon">Xing</p>
-                      <a
-                        href="https://xing.com/profile/Marc_Mogdanz"
-                        className="has-text-grey-dark"
-                      >
-                        <FontAwesomeIcon
-                          icon={faXing}
-                          className="icon is-medium"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="level-item has-text-centered">
-                    <div>
-                      <p className="heading social-icon">LinkedIn</p>
-                      <a
-                        href="https://linkedin.com/in/marc-mogdanz/"
-                        className="has-text-grey-dark"
-                      >
-                        <FontAwesomeIcon
-                          icon={faLinkedinIn}
-                          className="icon is-medium"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="level-item has-text-centered">
-                    <div>
-                      <p className="heading social-icon">Mail</p>
-                      <button
-                        type="button"
-                        className="button is-link is-light has-background-light has-text-grey-dark"
-                        onClick={this.toggleEmailModal.bind(this)}
-                      >
-                        <FontAwesomeIcon
-                          icon={faEnvelopeOpenText}
-                          className="icon is-medium"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </nav>
-              </div>
+          <div className="flex pt-3">
+            <div className="mx-auto flex flex-row">
+              {NavigationItems.map((item) => (
+                <MenuItem name={item.name} to={item.to} key={item.name} />
+              ))}
             </div>
           </div>
+        </div>
 
-          <section className="hero is-primary">
-            <div className="hero-body">
-              <div className="container">
-                <h1 className="title">Projects</h1>
-                <h2 className="subtitle">
-                  Everything I&apos;ve open sourced over the years
-                </h2>
-              </div>
-            </div>
-          </section>
-
-          <div className="container">
-            <div className="columns is-multiline">
-              <Projects />
-            </div>
+        <div className="absolute inset-x-0 top-0 flex bg-primary py-3">
+          <div className="mx-auto flex flex-row ">
+            {SocialProfiles.map((profile) => (
+              <SocialProfile
+                link={profile.link}
+                icon={profile.icon}
+                key={profile.link}
+              />
+            ))}
           </div>
-        </Layout>
-      </>
-    );
-  }
-}
+        </div>
+
+        <div className="absolute inset-x-0 bottom-0 flex">
+          <footer className="m-auto p-auto text-center font-mono">
+            <LocalStyledLink to="/legal">Legal Disclosure</LocalStyledLink> and{" "}
+            <LocalStyledLink to="/privacy">Privacy Policy</LocalStyledLink>
+          </footer>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default IndexPage;
