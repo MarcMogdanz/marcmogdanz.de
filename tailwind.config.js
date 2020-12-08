@@ -2,7 +2,10 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: [],
+  purge: {
+    // css is purged directly via a gatsby plugin
+    enabled: false,
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

@@ -66,5 +66,12 @@ module.exports = {
         pageTransitionDelay: 0,
       },
     },
+    // must be below "gatsby-plugin-postcss"
+    {
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        tailwind: true,
+      },
+    },
   ],
 };
