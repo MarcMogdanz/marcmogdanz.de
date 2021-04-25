@@ -1,3 +1,40 @@
-baseURL: http://example.org/
+title: Marc Mogdanz
+theme: PaperMod
+baseURL: https://marcmogdanz.de
 languageCode: en-us
-title: My New Hugo Site
+
+enableRobotsTXT: true
+paginate: 5
+author:
+  # used in RSS feeds
+  name: Marc Mogdanz
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: archive
+      name: Archive
+      url: /archive/
+      weight: 20
+
+params:
+  # dark/light mode
+  defaultTheme: auto
+
+  homeInfoParams:
+    Title: Title
+    Content: >
+      Multi line
+
+      - text
+
+  socialIcons:
+    - name: GitHub
+      url: https://github.com/MarcMogdanz/
+    - name: GitLab
+      url: https://gitlab.com/MarcMogdanz
+    - name: LinkedIn
+      url: https://linkedin.com/in/marc-mogdanz/
