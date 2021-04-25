@@ -3,5 +3,16 @@
     "env": {
       "HUGO_VERSION": "0.82.0"
     }
-  }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Permissions-Policy",
+          "value": "interest-cohort=()"
+        }
+      ]
+    }
+  ]
 }
