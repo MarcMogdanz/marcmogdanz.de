@@ -31,11 +31,15 @@ params:
   defaultTheme: auto
 
   homeInfoParams:
-    Title: Title
+    Title: Hey, I'm Marc &#9995;
     Content: >
-      Multi line
+      - I'm working as a Backend Developer and Infrastructure Dude&trade; for [narando](https://about.narando.com).
 
-      - text
+      - Additionally I'm studying at [Bielefeld University of Applied Sciences](https://fh-bielefeld.de) for my Bachelor's degree in Business Informatics.
+
+      -
+
+      - I love working in JavaScript/TypeScript and Node.js with AWS, Hetzner Cloud and bare metal as my go-to hosting solutions.
 
   socialIcons:
     - name: GitHub
