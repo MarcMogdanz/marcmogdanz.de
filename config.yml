@@ -21,6 +21,10 @@ menu:
       name: Archive
       url: /archive/
       weight: 20
+    - identifier: rss
+      name: RSS
+      url: /posts/index.xml
+      weight: 30
 
 params:
   #
