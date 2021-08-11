@@ -1,1 +1,10 @@
 {{ partial "plausible_head.html" . }}
+
+{{ if .Params.metis }}
+<img
+  src="https://vg08.met.vgwort.de/na/{{ .Params.metis }}"
+  width="1"
+  height="1"
+  alt=""
+/>
+{{- end }}
