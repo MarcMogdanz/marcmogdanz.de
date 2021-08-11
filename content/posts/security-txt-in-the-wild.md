@@ -6,6 +6,7 @@ description: Crawling the Alexa Top 1000 websites and checking their security.tx
 tags: ["Security.txt", "JavaScript", "TypeScript"]
 draft: false
 date: 2021-05-31T12:00:00+00:00
+metis: ab2daaca25b14efe994198f4e9ed124d
 
 cover:
   image: "/posts/security-txt-in-the-wild/cover.png"
