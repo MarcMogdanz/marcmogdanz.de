@@ -2,9 +2,6 @@
 title: Privacy
 draft: false
 private: true
-
-ShowReadingTime: false
-ShowPostNavLinks: false
 ---
 
 ## Hosting

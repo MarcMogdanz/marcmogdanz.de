@@ -2,9 +2,6 @@
 title: Impressum
 draft: false
 private: true
-
-ShowReadingTime: false
-ShowPostNavLinks: false
 ---
 
 ## Angaben gemäß § 5 TMG
