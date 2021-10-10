@@ -10,12 +10,12 @@
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
+    <span>&copy; {{ now.Year }} <a href="{{ "" | relLangURL }}">{{ .Site.Title }}</a></span>
     {{- end }}
     <span>&middot;</span>
-    <span><a href="{{ "impressum" | absLangURL }}">Impressum</a></span>
+    <span><a href="{{ "impressum" | relLangURL }}">Impressum</a></span>
     <span>&middot;</span>
-    <span><a href="{{ "privacy" | absLangURL }}">Privacy</a></span>
+    <span><a href="{{ "privacy" | relLangURL }}">Privacy</a></span>
     <span>&middot;</span>
     <span>Hosted on <a href="https://vercel.com" rel="noopener" target="_blank">Vercel</a></span>
     <span>&middot;</span>
