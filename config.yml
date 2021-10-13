@@ -21,10 +21,14 @@ menu:
       name: Archive
       url: /archive/
       weight: 20
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 30
     - identifier: feed
       name: Feed
       url: /posts/index.xml
-      weight: 30
+      weight: 40
 
 params:
   #
