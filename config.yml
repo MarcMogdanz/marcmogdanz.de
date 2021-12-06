@@ -41,13 +41,13 @@ params:
   homeInfoParams:
     Title: Hey, I'm Marc &#9995;
     Content: >
-      - I'm working as a Backend Developer and Infrastructure Dude&trade; for [narando](https://about.narando.com).
+      - I'm working as a Backend Developer for [Story of AMS](https://storyofams.com) in Amsterdam &#127475;&#127473;
 
       - Additionally I'm studying at [Bielefeld University of Applied Sciences](https://fh-bielefeld.de) for my Bachelor's degree in Business Informatics.
 
       -
 
-      - I love working in JavaScript/TypeScript and Node.js with AWS, Hetzner Cloud and bare metal as my go-to hosting solutions.
+      - I love working with NestJS and Postgres for my backends and Next.js and Tailwind CSS for my frontends. My go-to hosting solutions consist of Vercel, supabase and Hetzner Cloud, or AWS and bare metal for demanding projects.
 
   socialIcons:
     - name: GitHub
