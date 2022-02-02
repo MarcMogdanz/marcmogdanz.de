@@ -7,8 +7,8 @@ private: true
 ## Angaben gemäß § 5 TMG
 
 Marc Mogdanz  
-Oberntorwall 12  
-33602 Bielefeld
+Haberbreede 29  
+32429 Minden
 
 ### Kontakt
 
@@ -18,5 +18,5 @@ E-Mail: trash@marcmogdanz.de
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
 Marc Mogdanz  
-Oberntorwall 12  
-33602 Bielefeld
+Haberbreede 29  
+32429 Minden
