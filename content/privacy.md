@@ -8,6 +8,12 @@ private: true
 
 This website is being hosted by Vercel, the Privacy Policy of Vercel can be found here: https://vercel.com/legal/privacy-policy
 
+## Tracking
+
+This website uses [Pirsch](https://pirsch.io/) for website analytics. Pirsch is a lightweight and privacy-friendly analytics tool which is open source, does not use any cookies and is fully GDPR conform. They are based and hosted in Germany. The privacy policy of Pirsch can be found [here](https://pirsch.io/privacy).
+
+If you'd like to opt-out, you can block the following domain: `api.pirsch.io`, but keep in mind: this blocks analytics on all websites using Pirsch, not just mine.
+
 ## METIS (VG Wort)
 
 This website is participating in the METIS program and uses a tracking pixel for this. METIS is a program run by the german VG Wort to allow online blogs to get a small royalty for publishing posts.
