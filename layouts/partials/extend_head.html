@@ -1,3 +1,5 @@
+{{ partial "plausible_head.html" . }}
+
 {{ if .Params.metis }}
 <img
   src="https://vg08.met.vgwort.de/na/{{ .Params.metis }}"
@@ -6,11 +8,3 @@
   alt=""
 />
 {{- end }}
-
-<script
-  defer
-  type="text/javascript"
-  src="https://api.pirsch.io/pirsch.js"
-  id="pirschjs"
-  data-code="qQeI5dmkFdNOmlw4fvYmWgpaOlHFXojj"
-></script>
