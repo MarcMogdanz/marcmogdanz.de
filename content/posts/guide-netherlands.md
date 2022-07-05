@@ -80,3 +80,43 @@ Probably doesn't matter if you're considering staying in an hotel, but Amsterdam
 AirBnB and similar sites are not really liked here because they take "normal" apartments from the local population and offer them for a much higher price to tourists.
 
 The city is also going down hard on them and there are a [lot of rules](https://www.amsterdam.nl/veelgevraagd/?caseid=%7BDB74D98B-5515-4205-AB86-8AE634DD89E6%7D) which need to be met to be allowed to rent out on AirBnB, for example you're only allowed to rent out on AirBnB for a max of 30 days per year.
+
+# Insurances
+
+## Health insurance
+
+Everybody living or working in The Netherlands is required to have health insurance. If you've just moved here you have around **four months** to get your Dutch health insurance setup.
+
+In The Netherlands the employee needs to pay their health insurance themselves so you'll pay your premium from your _net salary_. Some other countries, like Germany, have a system in place where the employer pays your health insurance from your _gross salary_. This is **not** the case here, so keep in mind your net salary is exclusive of your health insurance premium.
+
+The price of your health insurance consists of two parts, your premium _(premie)_ and your copay _(eigen risico)_. You'll pay your premium each month but some health insurance companies also offer you to pay it every 3, 6 or 12 months for a small discount. The copay works basically in a "you have to pay a maximum of your copay per year" yourself. The minimum copay for 2022 is 385 Euro, so if your medicine/therapy costs 500 Euro, you'll have to pay 385 Euro yourself and the remaining 115 Euro and everything above that will be covered for the rest of the calendar year. Some health insurance companies allow you to set a higher copay and offer you a lower premium which may be beneficial if you're healthy and/or don't take use of your health insurance. Children are covered by their parents health insurance and have no own premium/copay.
+
+Small note, you'll have to pay for your health insurance retroactive beginning from the date of your registration, not when you actually took the insurance policy. Best to keep money aside each month until you've figured it out so you're not getting hit with a surprise bill.
+
+Most of the health insurance policies are not that different but you'll have two ways to find your ideal policy: You can checkout [each of them one by one](https://www.zorgverzekering.org/eng/insurance-companies/). Or you can use a search engine like [zorgwijzer](https://www.zorgwijzer.nl/zorgvergelijker/english#/search) or [independer](https://www.independer.nl/zorgverzekering/intro.aspx).
+
+In general what is being paid, how much, where etc. are all rather specific questions and you should research for yourself, especially if you already need medicine.
+
+More info can be found on the [iamexpat.nl](https://www.iamexpat.nl/expat-info/insurances-netherlands/dutch-health-insurance) site.
+
+If you've setup your health insurance it's also good to find a General Practitioners (GP) near you so you can register with them and have somebody you can talk to if you have questions. You'll also need to get a referral from your GP each time you need to see a specialist.
+
+In case you're from a digital stone age country like Germany where you still need to have your [blue health insurance card](https://ec.europa.eu/social/main.jsp?catId=653&langId=en) in order to see a doctor: you don't need it here. It's called a _Zorgpas_ and most health insurance companies provide you with a digital version in their app/on their website. If you're at a doctor it's enough to provide you with your BSN and say that you have Dutch health insurance. Most companies also issue physical cards if you ask them for example when you're traveling within the EU.
+
+Last but not least, you're only allowed to switch your health insurance company once a year and you'll need to do so prior to the 1st of January. An exception is when you just moved to The Netherlands then you're obviously allowed to get one immediately.
+
+## Home insurance
+
+You're not legally required to take home insurance but in my opinion it's a good tradeoff to a pay a small amount each month but in case you (or nature) fucks something up, you're covered and in my opinion it's worth my peace of mind.
+
+There are also some landlords who require the renter to take out home insurance by a clause in the rental contract, so check your contract if that's the case for you. It may also be required/relevant for you if you want to buy a property here on a mortgage.
+
+Personally I'm using [Lemonade](https://www.lemonade.com/nl/en/) because their app/website are both available fully in English, their [policy is open source](https://www.lemonade.com/nl/en/policy-two) and the same for everybody and they offer a combined home insurance and personal liability insurance. I'm paying around 6 Euro a month for both which in my books is a good deal.
+
+You can find a list of more companies offering home insurance over on the [expatica.com](https://www.expatica.com/nl/finance/insurance/home-insurance-in-the-netherlands-132194/#companies) site.
+
+Small note, if you're living in a shared apartment and/or are not [officially married/in an registered partnership](https://www.government.nl/topics/marriage-cohabitation-agreement-registered-partnership/marriage-registered-partnership-and-cohabitation-agreements) you may need to take out these insurances for each of you separately, also if you're living in the same apartment.
+
+## Personal liability insurance
+
+Pretty much the same goes for this one as for the [home insurance](#home-insurance). You're not required to take it but in my opinion it's a small amount of money which gives you peace of mind. There's a good [blog post by Lemonde](https://www.lemonade.com/nl/blog/liability-insurance-netherlands/) explaining the benefits of it but as always, you'll need to decide for yourself.
