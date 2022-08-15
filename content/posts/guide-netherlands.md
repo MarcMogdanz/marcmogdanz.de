@@ -24,9 +24,11 @@ ShowShareButtons: false
 HideSummary: false
 ---
 
-Nearly half a year ago I made the biggest decision of my life so far. I dropped out of college and moved to Amsterdam.
+Nearly half a year ago I made the biggest decision of my life so far. I dropped out of university and moved to Amsterdam. This is my attempt to summarize all the stuff I researched and experienced so far. So welcome to my personal version of [**Ned's Declassified School Survival Guide**](https://en.wikipedia.org/wiki/Ned%27s_Declassified_School_Survival_Guide).
 
 I'll try my best to keep the post up to date and also add more content as I learn more about how this country works!
+
+{{< lastEdit >}}
 
 # Place to stay
 
