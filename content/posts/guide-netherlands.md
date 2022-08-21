@@ -34,8 +34,6 @@ I'll try my best to keep the post up to date and also add more content as I lear
 
 As you can imagine a lot of people from within The Netherlands but also from outside wanna live, work and study here. That's the reason why Amsterdam has one of the most heated housing markets in Europe. Finding a place to stay will probably be the hardest part of settling down here.
 
-_Some general rules which you should follow:_
-
 In Amsterdam and also some other cities in The Netherlands it is [forbidden to share an apartment with more than two people](https://dutchnews.nl/news/2019/12/amsterdam-flat-sharing-rules-start-to-bite-aim-is-to-bring-balance-d66-says/) if they are not related without a permit by the city. So you'll see many apartments advertised with `no registration` and this is especially the case for shared apartments!
 
 Registering at an address is an important and **unskippable** step for getting your BSN and is needed if you want to stay here. **So make sure you can register at your address!** You should also check with your landlord that the previous renter will deregister or has already deregistered from your address because until they deregistered they will still count towards the maximum of two people per apartment limit.
@@ -60,9 +58,9 @@ The cheapest way to find shared apartments is probably via Facebook groups. Ther
 
 Otherwise there are a bunch of sites like pararius and funda but where your for example the roommates will put up the listings. The weird part and some would call it the exploitation part is: on most sites you as a potential renter have to pay to be able to send messages/contact the listing owner.
 
-**[Kamernet](https://kamernet.nl/en):** good amount of listings, but rather expensive (15 days for 26 Euro, 1 month for 34 Euro and 3 months for 68 Euro)  
-**[kamer.nl](https://kamer.nl/en):** good amount of listings, need to pay (1 month for 25 Euro)  
-**[HousingAnywhere](https://housinganywhere.com/):** okayish amount of listings, also rather expensive (2 weeks for 26 Euro, 1 month for 34 Euro and 3 months for 68 Euro)  
+**[Kamernet](https://kamernet.nl/en):** good amount of listings, but rather expensive (15 days for 26 EUR, 1 month for 34 EUR and 3 months for 68 EUR)  
+**[kamer.nl](https://kamer.nl/en):** good amount of listings, need to pay (1 month for 25 EUR)  
+**[HousingAnywhere](https://housinganywhere.com/):** okayish amount of listings, also rather expensive (2 weeks for 26 EUR, 1 month for 34 EUR and 3 months for 68 EUR)  
 **[Just Landed](https://housing.justlanded.com/en/Netherlands/Flatshare):** free, but mostly imports listings from other sites
 
 As always, [YMMV](https://urbandictionary.com/define.php?term=ymmv) and a search on your own won't hurt. But keep in mind, most of the plans above are **recurring subscriptions** which you should cancel asap.
@@ -75,7 +73,7 @@ Hotels are fucking expensive. They should only be an option for you in a worst c
 
 If you're already in The Netherlands it may be cheaper to check local hotels for long term deals by visiting or calling them. Some hotels also offer registration on a long term deal.
 
-Probably doesn't matter if you're considering staying in an hotel, but Amsterdam charges 7% and 3 Euro per person per night [tourist tax](<https://www.amsterdam.nl/en/municipal-taxes/tourist-tax-(toeristenbelasting)/>).
+Probably doesn't matter if you're considering staying in an hotel, but Amsterdam charges 7% and 3 EUR per person per night [tourist tax](<https://www.amsterdam.nl/en/municipal-taxes/tourist-tax-(toeristenbelasting)/>).
 
 ## AirBnB
 
@@ -91,7 +89,7 @@ In The Netherlands you have quite a few options when it comes to banks but first
 
 The list of currently supported banks can be found [here](https://www.ideal.nl/en/partners/issuers/). They can be separated into two groups, the more traditional banks which have physical branches and all that or the more modern ones, so called [neobanks](https://en.wikipedia.org/wiki/Neobank), which have more modern apps, are fairly new and have no physical branches. Traditional ones would for example be [ABN AMRO](https://www.abnamro.nl/en/personal/index.html) and [Rabobank](https://www.rabobank.nl/) and the neobanks/direct banks would be [bunq](https://www.bunq.com/), [ING](https://www.ing.nl/particulier/english/index.html) and [Revolut](https://www.revolut.com/). A quite important note: the neobanks' websites and apps are nearly all available in English, but most of the traditional banks are only available in Dutch.
 
-Also you should make sure your [IBAN](https://en.wikipedia.org/wiki/International_Bank_Account_Number) will be an actual Dutch one meaning it starts with `NL`. For example Revolut is part of iDEAL so you can pay online but you'll have an Lithuanian IBAN (starting with `LT`) which in itself is no problem because companies in the EU have to accept other countries' bank accounts and you're also insured up to 100k Euro on your bank account but for example the Dutch version of PayPal called Tikkie does only work with a Dutch IBAN.
+Also you should make sure your [IBAN](https://en.wikipedia.org/wiki/International_Bank_Account_Number) will be an actual Dutch one meaning it starts with `NL`. For example Revolut is part of iDEAL so you can pay online but you'll have an Lithuanian IBAN (starting with `LT`) which in itself is no problem because companies in the EU have to accept other countries' bank accounts and you're also insured up to 100k EUR on your bank account but for example the Dutch version of PayPal called Tikkie does only work with a Dutch IBAN.
 
 From personal experiences I can say most expats go for either ABN AMRO, ING or bunq. If you want to get a loan in the near future it may be beneficial to go to a more traditional bank, if you want the newest "banking features" and a fancy app, then something like bunq would probably something for you.
 
@@ -117,17 +115,17 @@ It requires you to have a Dutch, Belgian or German phone number and a bank accou
 
 ## Currencies
 
-Most countries in the EU including The Netherlands use the Euro.
+Most countries in the EU including The Netherlands use the euro.
 
-When exchanging to Euro, especially from US Dollars, you should really check what the real and hidden costs are. Most banks may give you the "real" exchange rate by the European Central Bank but charge you a flat or percentage based fee for exchanging. From my experiences there are two cheap and effective ways to exchange to or from Euro:
+When exchanging to euro, especially from US Dollars, you should really check what the real and hidden costs are. Most banks may give you the "real" exchange rate by the European Central Bank but charge you a flat or percentage based fee for exchanging. From my experiences there are two cheap and effective ways to exchange to or from euro:
 
-1. The easiest one is by using [Wise](https://wise.com/) (formerly TransferWise). They are very transparent about what their fees are and what exchange rate they give you. Depending on what type of method for sending the money you'll use, you'll literally pay next to nothing especially compared to most banks or exchange offices. At the time of writing, a 1.000 USD transfer to EUR will cost around $3.50 as a wire transfer fee and they'll additionally take around $5 for the actual exchange fee. Comparing the exchange rate with the official one of the ECB they have a spread of below 0,01% meaning you'll literally only pay around $9 for the transaction.
+1. The easiest one is by using [Wise](https://wise.com/) (formerly TransferWise). They are very transparent about what their fees are and what exchange rate they give you. Depending on what type of method for sending the money you'll use, you'll literally pay next to nothing especially compared to most banks or exchange offices. At the time of writing, a USD 1k transfer to euro will cost around USD 3.50 as a wire transfer fee and they'll additionally take around USD 5 for the actual exchange fee. Comparing the exchange rate with the official one of the ECB they have a spread of below 0.01% meaning you'll literally only pay around USD 9 for the transaction.
 
-2. If you're US based or moving across countries and are also investing then you'll probably already know and/or use [Interactive Brokers](https://www.interactivebrokers.com/en/home.php). They are pretty much the only half-way pain free solution if you want to invest but are a tax resident of multiple countries and/or have US citizenship (including green card). You can open an account with them, pay in with your currency (e.g. USD) and then convert it via the mid-day market rate to EUR and send it to your bank account here in the EU.
+2. If you're US based or moving across countries and are also investing then you'll probably already know and/or use [Interactive Brokers](https://www.interactivebrokers.com/en/home.php). They are pretty much the only half-way pain free solution if you want to invest but are a tax resident of multiple countries and/or have US citizenship (including green card). You can open an account with them, pay in with your currency (e.g. USD) and then convert it via the mid-day market rate to euro and send it to your bank account here in the EU.
 
-Also just never use any exchange office, most of them are scams and it's not worth the pain to check which ones aren't. The Netherlands is mostly cashless so you don't need any physical Euro when arriving. Just setup your bank account beforehand or make sure you can use your foreign bank cards and then you're good to go. In case you want some physical money when arriving, just try to ask your bank in your home country if they can order Euros for you. It will probably cost you a bit but then you have the peace of mind.
+Also just never use any exchange office, most of them are scams and it's not worth the pain to check which ones aren't. The Netherlands is mostly cashless so you don't need any physical euro when arriving. Just setup your bank account beforehand or make sure you can use your foreign bank cards and then you're good to go. In case you want some physical money when arriving, just try to ask your bank in your home country if they can order euros for you. It will probably cost you a bit but then you have the peace of mind.
 
-_Important note:_ The EU is going down hard on money laundering and has some quite strict laws on it. If you enter the EU with more than 10.000 Euro you are legally required to declare it. You'll need to prove how you got the money and will probably also need to give a reason why you're carrying it with you. You are not required to declare it if it's under 10.000 but be prepared for questions if you get checked randomly and you have a couple thousands with you. Also a small tip, if you're entering with a partner: if one of you has e.g. 15.000 in their luggage but it's technically the money of both of you there is a chance the people at customs won't like this. So make sure you physically split the money, the same goes for cigarettes, alcohol and the rest.
+_Important note:_ The EU is going down hard on money laundering and has some quite strict laws on it. If you enter the EU with more than 10k EUR you are legally required to declare it. You'll need to prove how you got the money and will probably also need to give a reason why you're carrying it with you. You are not required to declare it if it's under 10k but be prepared for questions if you get checked randomly and you have a couple thousands with you. Also a small tip, if you're entering with a partner: if one of you has e.g. 15k in their luggage but it's technically the money of both of you there is a chance the people at customs won't like this. So make sure you physically split the money, the same goes for cigarettes, alcohol and the rest.
 
 Also if you're transferring big sums of money from outside the EU to inside the EU, you and/or your European bank may be legally required to report this. You'll again need to prove how you got the money and it may be good to give your bank a call before hand and check with them and what their requirements are. There are a lot of horror stories where bank accounts got frozen and stuff like that. Better safe than sorry!
 
@@ -183,7 +181,7 @@ Everybody living or working in The Netherlands is required to have health insura
 
 In The Netherlands the employee needs to pay their health insurance themselves so you'll pay your premium from your _net salary_. Some other countries, like Germany, have a system in place where the employer pays your health insurance from your _gross salary_. This is **not** the case here, so keep in mind your net salary is exclusive of your health insurance premium.
 
-The price of your health insurance consists of two parts, your premium _(premie)_ and your copay _(eigen risico)_. You'll pay your premium each month but some health insurance companies also offer you to pay it every 3, 6 or 12 months for a small discount. The copay works basically in a "you have to pay a maximum of your copay per year" yourself. The minimum copay for 2022 is 385 Euro, so if your medicine/therapy costs 500 Euro, you'll have to pay 385 Euro yourself and the remaining 115 Euro and everything above that will be covered for the rest of the calendar year. Some health insurance companies allow you to set a higher copay and offer you a lower premium which may be beneficial if you're healthy and/or don't take use of your health insurance. Children are covered by their parents health insurance and have no own premium/copay.
+The price of your health insurance consists of two parts, your premium _(premie)_ and your copay _(eigen risico)_. You'll pay your premium each month but some health insurance companies also offer you to pay it every 3, 6 or 12 months for a small discount. The copay works basically in a "you have to pay a maximum of your copay per year" yourself. The minimum copay for 2022 is 385 EUR, so if your medicine/therapy costs 500 EUR, you'll have to pay 385 EUR yourself and the remaining 115 EUR and everything above that will be covered for the rest of the calendar year. Some health insurance companies allow you to set a higher copay and offer you a lower premium which may be beneficial if you're healthy and/or don't take use of your health insurance. Children are covered by their parents health insurance and have no own premium/copay.
 
 Small note, you'll have to pay for your health insurance retroactive beginning from the date of your registration, not when you actually took the insurance policy. Best to keep money aside each month until you've figured it out so you're not getting hit with a surprise bill.
 
@@ -205,7 +203,7 @@ You're not legally required to take home insurance but in my opinion it's a good
 
 There are also some landlords who require the renter to take out home insurance by a clause in the rental contract, so check your contract if that's the case for you. It may also be required/relevant for you if you want to buy a property here on a mortgage.
 
-Personally I'm using [Lemonade](https://www.lemonade.com/nl/en/) because their app/website are both available fully in English, their [policy is open source](https://www.lemonade.com/nl/en/policy-two) and the same for everybody and they offer a combined home insurance and personal liability insurance. I'm paying around 6 Euro a month for both which in my books is a good deal.
+Personally I'm using [Lemonade](https://www.lemonade.com/nl/en/) because their app/website are both available fully in English, their [policy is open source](https://www.lemonade.com/nl/en/policy-two) and the same for everybody and they offer a combined home insurance and personal liability insurance. I'm paying around 6 EUR a month for both which in my books is a good deal.
 
 You can find a list of more companies offering home insurance over on the [expatica.com](https://www.expatica.com/nl/finance/insurance/home-insurance-in-the-netherlands-132194/#companies) site.
 
