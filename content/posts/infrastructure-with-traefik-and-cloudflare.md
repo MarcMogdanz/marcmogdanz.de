@@ -5,7 +5,7 @@ description: A guide on how to setup your infrastructure with Traefik, Docker an
 # aliases: ["/example"]
 tags: ["Guide", "Traefik", "Docker", "Cloudflare"]
 draft: false
-date: 2022-08-26T02:00:00+02:00 # date: 2022-08-26T12:00:00+02:00
+date: 2022-08-26T02:00:00+02:00
 
 cover:
   image: "/posts/infrastructure-with-traefik-and-cloudflare/cover.png"
