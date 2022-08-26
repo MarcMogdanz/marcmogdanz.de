@@ -46,7 +46,7 @@ This guide is based on the fact that you're using or have the following things:
   - If you don't have a spare one, you can use [TLD List](https://tld-list.com/) and filter based on "cheapest register" to grab a burner domain
   - It should be already added to your Cloudflare account, [guide for adding domains](https://support.cloudflare.com/hc/en-us/articles/201720164-Creating-a-Cloudflare-account-and-adding-a-website)
 - Server
-  - In this guide I'll be using Ubuntu 20.04 on a CX11 from [Hetzner Cloud](https://hetzner.cloud/?ref=9o3RKIirJ4jI) (\*ref) with 1 vCPU, 2 GB RAM and 20 GB SSD
+  - In this guide I'll be using Ubuntu 20.04 on a CX11 from [Hetzner Cloud](https://hetzner.cloud/?ref=9o3RKIirJ4jI) **(\*)** with 1 vCPU, 2 GB RAM and 20 GB SSD
 
 For simplicity's sake I'll use `example.com` and `SERVER_IP` as placeholders. These should be replaced by your own domain and your server's IP address.
 
@@ -768,3 +768,5 @@ Now we just need to attach the middleware to all the routers of the services we 
    traefik_proxy:
      external: true
 ```
+
+{{< refLinkDisclaimer >}}
