@@ -1,18 +1,16 @@
 ---
 title: "Marc's Guide to The Netherlands"
 description: My attempt at making the guide I wish existed when I moved to The Netherlands
-author: ["Marc"]
+# author: ["Marc"]
 # aliases: ["/example"]
-tags: ["lorem", "ipsum"]
+tags: ["Guide", "The Netherlands", "Amsterdam"]
 draft: false
-date: 2022-07-05T02:23:05+02:00
-metis: CHANGE_ME
+date: 2022-10-07T02:00:00+02:00
 
 cover:
-  image: "https://picsum.photos/300/100"
-  alt: "Lorem ipsum"
-  caption: "Lorem ipsum"
-  hidden: true # hide on single page, show on front page
+  image: "/posts/guide-to-the-netherlands/cover.png"
+  alt: "A typical Dutch 'omafiets' bicycle in yellow with a basket in front and a Dutch flag hanging on the back. The front wheel is black which is a typical sign for a bicycle by the company Swapfiets."
+  hidden: false
 
 ShowReadingTime: true
 ShowPostNavLinks: true
@@ -24,7 +22,9 @@ ShowShareButtons: false
 HideSummary: false
 ---
 
-Nearly half a year ago I made the biggest decision of my life so far. I dropped out of university and moved to Amsterdam. This is my attempt to summarize all the stuff I researched and experienced so far. So welcome to my personal version of [**Ned's Declassified School Survival Guide**](https://en.wikipedia.org/wiki/Ned%27s_Declassified_School_Survival_Guide).
+Over half a year ago I made the biggest decision of my life so far. I dropped out of university and moved to Amsterdam without really knowing what I'm putting myself into. This is my attempt to summarize all the stuff I learned and experienced so far.
+
+So welcome to my personal version of [**Ned's Declassified School Survival Guide**](https://en.wikipedia.org/wiki/Ned%27s_Declassified_School_Survival_Guide).
 
 I'll try my best to keep the post up to date and also add more content as I learn more about how this country works!
 
@@ -87,7 +87,7 @@ The city is also going down hard on them and there are a [lot of rules](https://
 
 In The Netherlands you have quite a few options when it comes to banks but first you need to understand how the Dutch payment system works. There is a payment system called [iDEAL](https://https://www.ideal.nl/en/consumers/what-is-ideal/) which is being used by nearly every Dutch bank. It's basically just a neat and simple interface to pay online or in person but it's just a normal bank transfer in the background, kind of similar to what [SOFORT](https://www.sofort.com/) is. At a lot of places you'll need to use iDEAL because it's the only option available (e.g. when buying a personal OV-chipkaart online), so it's kind of a requirement to use a bank which supports iDEAL.
 
-The list of currently supported banks can be found [here](https://www.ideal.nl/en/partners/issuers/). They can be separated into two groups, the more traditional banks which have physical branches and all that or the more modern ones, so called [neobanks](https://en.wikipedia.org/wiki/Neobank), which have more modern apps, are fairly new and have no physical branches. Traditional ones would for example be [ABN AMRO](https://www.abnamro.nl/en/personal/index.html) and [Rabobank](https://www.rabobank.nl/) and the neobanks/direct banks would be [bunq](https://www.bunq.com/), [ING](https://www.ing.nl/particulier/english/index.html) and [Revolut](https://www.revolut.com/). A quite important note: the neobanks' websites and apps are nearly all available in English, but most of the traditional banks are only available in Dutch.
+The list of currently supported banks can be found [here](https://www.ideal.nl/en/partners/issuers/). They can be separated into two groups, the more traditional banks which have physical branches and all that or the more modern ones, so called [neobanks](https://en.wikipedia.org/wiki/Neobank), which have more modern apps, are fairly new and have no physical branches. Traditional ones would for example be [ABN AMRO](https://www.abnamro.nl/en/personal/index.html) and [Rabobank](https://www.rabobank.nl/) and the neobanks/direct banks would be [bunq](https://www.bunq.com/), [ING](https://www.ing.nl/particulier/english/index.html) and [Revolut](https://www.revolut.com/) **(\*)**. A quite important note: the neobanks' websites and apps are nearly all available in English, but most of the traditional banks are only available in Dutch.
 
 Also you should make sure your [IBAN](https://en.wikipedia.org/wiki/International_Bank_Account_Number) will be an actual Dutch one meaning it starts with `NL`. For example Revolut is part of iDEAL so you can pay online but you'll have an Lithuanian IBAN (starting with `LT`) which in itself is no problem because companies in the EU have to accept other countries' bank accounts and you're also insured up to 100k EUR on your bank account but for example the Dutch version of PayPal called Tikkie does only work with a Dutch IBAN.
 
@@ -212,3 +212,5 @@ Small note, if you're living in a shared apartment and/or are not [officially ma
 ## Personal liability insurance
 
 Pretty much the same goes for this one as for the [home insurance](#home-insurance). You're not required to take it but in my opinion it's a small amount of money which gives you peace of mind. There's a good [blog post by Lemonde](https://www.lemonade.com/nl/blog/liability-insurance-netherlands/) explaining the benefits of it but as always, you'll need to decide for yourself.
+
+{{< refLinkDisclaimer >}}
