@@ -181,7 +181,7 @@ $ nano traefik.toml
 Now it's time to start Traefik for the first time and verify everything is working as intended.
 
 ```bash
-$ docker-compose up traefik
+$ docker-compose up -d
 
 Pulling traefik (traefik:v2.4)...
 v2.4: Pulling from library/traefik
@@ -233,9 +233,6 @@ Make sure your server's IP is **not** amongst the returned IPs because we're hid
 We don't want our services to be accessible from the internet directly and only through Traefik. Therefore we'll create a Docker network for all our services.
 
 ```bash
-# Stop Traefik
-$ docker-compose down
-
 # Create the network
 $ docker network create traefik_proxy
 ```
@@ -270,7 +267,11 @@ This will create the network which still needs to be added to the Compose file.
 And now we can fire Traefik back up.
 
 ```bash
-$ docker-compose up traefik
+# Stop Traefik
+$ docker-compose down
+
+# Start Traefik
+$ docker-compose up -d
 ```
 
 ## Dummy service
@@ -323,7 +324,7 @@ This is the magic of the auto service discovery by Traefik, for the most part yo
 Now you can both Traefik and the whoami container.
 
 ```bash
-$ docker-compose up traefik whoami
+$ docker-compose up -d
 ```
 
 Verify that the service is reachable by going to `http://whoami.example.com` and `https://whoami.example.com`.
@@ -509,8 +510,11 @@ Additionally we need to mount the new config file into Traefik's docker containe
 And the obligatory restart:
 
 ```bash
+# Stop Traefik + Whoami
+$ docker-compose down
+
 # Start Traefik + Whoami
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 Each request to `whoami.example.com` now will not only pass through Cloudflare's servers as a proxy but it will now also be encrypted between the browser and Cloudflare as well as between Cloudflare and our server.
