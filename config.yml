@@ -19,7 +19,7 @@ menu:
       weight: 10
     - identifier: archive
       name: Archive
-      url: /archive/
+      url: /archive
       weight: 20
     - identifier: contact
       name: Contact
