@@ -1,5 +1,5 @@
 ---
-title: "Security.txt In The Wild"
+title: "Security.txt in the Wild"
 description: Crawling the Alexa Top 1000 websites and checking their security.txt file
 # author: ["Marc"]
 # aliases: ["/example"]
