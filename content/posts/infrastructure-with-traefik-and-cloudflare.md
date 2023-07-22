@@ -105,7 +105,7 @@ services:
   traefik:
     image: traefik:v2.4
     container_name: traefik
-    restart: always
+    restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
@@ -181,7 +181,7 @@ $ nano traefik.toml
 Now it's time to start Traefik for the first time and verify everything is working as intended.
 
 ```bash
-$ docker-compose up traefik
+$ docker-compose up -d
 
 Pulling traefik (traefik:v2.4)...
 v2.4: Pulling from library/traefik
@@ -233,9 +233,6 @@ Make sure your server's IP is **not** amongst the returned IPs because we're hid
 We don't want our services to be accessible from the internet directly and only through Traefik. Therefore we'll create a Docker network for all our services.
 
 ```bash
-# Stop Traefik
-$ docker-compose down
-
 # Create the network
 $ docker network create traefik_proxy
 ```
@@ -251,7 +248,7 @@ This will create the network which still needs to be added to the Compose file.
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
        - "80:80"
        - "443:443"
@@ -270,7 +267,11 @@ This will create the network which still needs to be added to the Compose file.
 And now we can fire Traefik back up.
 
 ```bash
-$ docker-compose up traefik
+# Stop Traefik
+$ docker-compose down
+
+# Start Traefik
+$ docker-compose up -d
 ```
 
 ## Dummy service
@@ -286,7 +287,7 @@ Now we're actually adding the first service by adding the container definition i
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
        - "80:80"
        - "443:443"
@@ -300,7 +301,7 @@ Now we're actually adding the first service by adding the container definition i
 +  whoami:
 +    image: traefik/whoami
 +    container_name: whoami
-+    restart: always
++    restart: unless-stopped
 +    labels:
 +      - "traefik.enable=true"
 +      - "traefik.http.routers.whoami.rule=Host(`whoami.example.com`)"
@@ -323,7 +324,7 @@ This is the magic of the auto service discovery by Traefik, for the most part yo
 Now you can both Traefik and the whoami container.
 
 ```bash
-$ docker-compose up traefik whoami
+$ docker-compose up -d
 ```
 
 Verify that the service is reachable by going to `http://whoami.example.com` and `https://whoami.example.com`.
@@ -396,7 +397,7 @@ We'll mount our `certs/` directory containing the certificate and key by Cloudfl
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
        - "80:80"
        - "443:443"
@@ -411,7 +412,7 @@ We'll mount our `certs/` directory containing the certificate and key by Cloudfl
    whoami:
      image: traefik/whoami
      container_name: whoami
-     restart: always
+     restart: unless-stopped
      labels:
        - "traefik.enable=true"
        - "traefik.http.routers.whoami.rule=Host(`whoami.example.com`)"
@@ -477,7 +478,7 @@ Additionally we need to mount the new config file into Traefik's docker containe
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
        - "80:80"
        - "443:443"
@@ -493,7 +494,7 @@ Additionally we need to mount the new config file into Traefik's docker containe
    whoami:
      image: traefik/whoami
      container_name: whoami
-     restart: always
+     restart: unless-stopped
      labels:
        - "traefik.enable=true"
        - "traefik.http.routers.whoami.rule=Host(`whoami.example.com`)"
@@ -509,8 +510,11 @@ Additionally we need to mount the new config file into Traefik's docker containe
 And the obligatory restart:
 
 ```bash
+# Stop Traefik + Whoami
+$ docker-compose down
+
 # Start Traefik + Whoami
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 Each request to `whoami.example.com` now will not only pass through Cloudflare's servers as a proxy but it will now also be encrypted between the browser and Cloudflare as well as between Cloudflare and our server.
@@ -549,7 +553,7 @@ This step is pretty easy as we only need to remove the `web` entrypoint from Tra
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
 -      - "80:80"
        - "443:443"
@@ -565,7 +569,7 @@ This step is pretty easy as we only need to remove the `web` entrypoint from Tra
    whoami:
      image: traefik/whoami
      container_name: whoami
-     restart: always
+     restart: unless-stopped
      labels:
        - "traefik.enable=true"
        - "traefik.http.routers.whoami.rule=Host(`whoami.example.com`)"
@@ -601,7 +605,7 @@ We rather want to make Traefik available by using Traefik itself instead of rela
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
        - "443:443"
 -      - "8080:8080"
@@ -623,7 +627,7 @@ We rather want to make Traefik available by using Traefik itself instead of rela
    whoami:
      image: traefik/whoami
      container_name: whoami
-     restart: always
+     restart: unless-stopped
      labels:
        - "traefik.enable=true"
        - "traefik.http.routers.whoami.rule=Host(`whoami.example.com`)"
@@ -655,7 +659,7 @@ I'm going to go for `foo` as the user and `bar` as the password which results in
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
        - "443:443"
        - "8080:8080"
@@ -679,7 +683,7 @@ I'm going to go for `foo` as the user and `bar` as the password which results in
    whoami:
      image: traefik/whoami
      container_name: whoami
-     restart: always
+     restart: unless-stopped
      labels:
        - "traefik.enable=true"
        - "traefik.http.routers.whoami.rule=Host(`whoami.example.com`)"
@@ -731,7 +735,7 @@ Now we just need to attach the middleware to all the routers of the services we 
    traefik:
      image: traefik:v2.4
      container_name: traefik
-     restart: always
+     restart: unless-stopped
      ports:
        - "443:443"
        - "8080:8080"
@@ -755,7 +759,7 @@ Now we just need to attach the middleware to all the routers of the services we 
    whoami:
      image: traefik/whoami
      container_name: whoami
-     restart: always
+     restart: unless-stopped
      labels:
        - "traefik.enable=true"
        - "traefik.http.routers.whoami.rule=Host(`whoami.example.com`)"
