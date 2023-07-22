@@ -1,7 +1,6 @@
 title: Marc Mogdanz
 theme:
   - PaperMod
-  - "plausible-hugo"
 baseURL: https://marcmogdanz.de
 languageCode: en-us
 
@@ -54,13 +53,3 @@ params:
       url: https://gitlab.com/MarcMogdanz
     - name: LinkedIn
       url: https://linkedin.com/in/marc-mogdanz/
-
-  #
-  # Plausible
-  #
-
-  plausible:
-    enable: true
-    domain: marcmogdanz.de
-    selfhosted_domain: p.marcmogdanz.de
-    outbound_link: true
