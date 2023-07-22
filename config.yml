@@ -49,7 +49,5 @@ params:
   socialIcons:
     - name: GitHub
       url: https://github.com/MarcMogdanz/
-    - name: GitLab
-      url: https://gitlab.com/MarcMogdanz
     - name: LinkedIn
       url: https://linkedin.com/in/marc-mogdanz/
