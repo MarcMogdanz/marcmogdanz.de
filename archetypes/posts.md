@@ -6,7 +6,6 @@ author: ["Marc"]
 tags: ["lorem", "ipsum"]
 draft: true
 date: {{ .Date }}
-metis: CHANGE_ME
 
 cover:
   image: "https://picsum.photos/300/100"
