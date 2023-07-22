@@ -4,10 +4,10 @@ draft: false
 private: true
 ---
 
-I do not have an official address in Germany as I am living abroad, but I do have a P.O. box which will be forwarded to me.
-
 Marc Mogdanz  
-Postfach 40 01 16  
-32499 Minden
+c/o autorenglück.de  
+Franz-Mehring-Str. 15  
+01237 Dresden  
+Germany
 
-E-Mail: [trash@marcmogdanz.de](mailto:trash@marcmogdanz.de)
+E-Mail: [contact@marcmogdanz.de](mailto:contact@marcmogdanz.de)
