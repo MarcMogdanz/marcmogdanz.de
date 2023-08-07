@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-{{- range .Pages -}}
-  {{ if .Params.private }}
-Disallow: {{ .RelPermalink }}
-  {{- end }}
-{{- end }}
