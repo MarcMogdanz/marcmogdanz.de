@@ -3,4 +3,12 @@ layout: ../layouts/PageLayout.astro
 title: "Privacy"
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+## Hosting
+
+This website is being hosted by Vercel, the Privacy Policy of Vercel can be found here: [https://vercel.com/legal/privacy-policy](https://vercel.com/legal/privacy-policy)
+
+## Tracking
+
+This website also uses a **self hosted** version of [umami](https://umami.is/) for website analytics. Plausible is a lightweight and privacy-friendly analytics tool which is open source, does not use any cookies and is fully GDPR conform.
+
+If you'd like to opt-out, you can enable the "Do Not Track" feature in your browser or if you want to be 100% sure, you can block the following domain: `umami.marcmogdanz.de`

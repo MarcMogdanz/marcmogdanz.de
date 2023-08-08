@@ -3,4 +3,10 @@ layout: ../layouts/PageLayout.astro
 title: "Imprint"
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Marc Mogdanz  
+c/o autorenglück.de  
+Franz-Mehring-Str. 15  
+01237 Dresden  
+Germany
+
+E-Mail: [contact@marcmogdanz.de](mailto:contact@marcmogdanz.de)
