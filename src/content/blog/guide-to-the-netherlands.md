@@ -1,0 +1,220 @@
+---
+title: "Marc's Guide to The Netherlands"
+postSlug: guide-to-the-netherlands
+description: My attempt at making the guide I wish existed when I moved to The Netherlands
+pubDatetime: 2022-10-07T02:00:00+02:00
+featured: false
+tags: ["Guide", "The Netherlands", "Amsterdam"]
+ogImage: "/posts/guide-to-the-netherlands/cover.png"
+---
+
+![Infrastructure with Traefik and Cloudflare](../../assets/posts/guide-to-the-netherlands/cover.png)
+
+Over half a year ago I made the biggest decision of my life so far. I dropped out of university and moved to Amsterdam without really knowing what I'm putting myself into. This is my attempt to summarize all the stuff I learned and experienced so far.
+
+So welcome to my personal version of [**Ned's Declassified School Survival Guide**](https://en.wikipedia.org/wiki/Ned%27s_Declassified_School_Survival_Guide).
+
+I'll try my best to keep the post up to date and also add more content as I learn more about how this country works!
+
+## Table of contents
+
+## Place to stay
+
+As you can imagine a lot of people from within The Netherlands but also from outside wanna live, work and study here. That's the reason why Amsterdam has one of the most heated housing markets in Europe. Finding a place to stay will probably be the hardest part of settling down here.
+
+In Amsterdam and also some other cities in The Netherlands it is [forbidden to share an apartment with more than two people](https://dutchnews.nl/news/2019/12/amsterdam-flat-sharing-rules-start-to-bite-aim-is-to-bring-balance-d66-says/) if they are not related without a permit by the city. So you'll see many apartments advertised with `no registration` and this is especially the case for shared apartments!
+
+Registering at an address is an important and **unskippable** step for getting your BSN and is needed if you want to stay here. **So make sure you can register at your address!** You should also check with your landlord that the previous renter will deregister or has already deregistered from your address because until they deregistered they will still count towards the maximum of two people per apartment limit.
+
+You should also keep in mind that many people are willing to overbid. So seeing apartments you're able to afford does not automatically mean you'll get them as many are more than happy to just offer to pay more rent if they get the apartment. I've heard some stories of my friends where people just blatantly offered 20% more per month just to get the apartment.
+
+If you can't find an apartment within Amsterdam, you should also consider moving outside or also to another city. Public transportation is quite good in The Netherlands and you can definitely stay in a city like Utrecht which is around 50km from Amsterdam and commute by train. It may not be a long term solution for you, but you should still consider it because it's easier to get an apartment once you're in The Netherlands vs. from abroad.
+
+Last but not least, if money isn't an issue for you: Get a real estate agent to find you an apartment. Many apartments will never be posted online because some agent will already have ten people in line who want it.
+
+### Own apartment
+
+Your own apartment is probably the preferred type of place to stay but obviously also the hardest to get. In general a one room apartment or studio will be harder to get than a bigger apartment as the demand is just higher.
+
+The two biggest sites in The Netherlands to find apartments are [pararius](https://pararius.com/apartments/amsterdam) and [funda](https://www.funda.nl/en/huur/amsterdam/). Both of them are really good and listings there are in general made by the landlords themselves or real estate agents and are of high quality.
+
+### Shared apartment
+
+Sharing an apartment is a good way of saving money and getting to know people but you're also competing with a **bunch more people**.
+
+The cheapest way to find shared apartments is probably via Facebook groups. There are a lot of them and also dedicated ones for expats/students, but beware there are also a lot of scammers as it tends they are sometimes not well moderated.
+
+Otherwise there are a bunch of sites like pararius and funda but where your for example the roommates will put up the listings. The weird part and some would call it the exploitation part is: on most sites you as a potential renter have to pay to be able to send messages/contact the listing owner.
+
+**[Kamernet](https://kamernet.nl/en):** good amount of listings, but rather expensive (15 days for 26 EUR, 1 month for 34 EUR and 3 months for 68 EUR)  
+**[kamer.nl](https://kamer.nl/en):** good amount of listings, need to pay (1 month for 25 EUR)  
+**[HousingAnywhere](https://housinganywhere.com/):** okayish amount of listings, also rather expensive (2 weeks for 26 EUR, 1 month for 34 EUR and 3 months for 68 EUR)  
+**[Just Landed](https://housing.justlanded.com/en/Netherlands/Flatshare):** free, but mostly imports listings from other sites
+
+As always, [YMMV](https://urbandictionary.com/define.php?term=ymmv) and a search on your own won't hurt. But keep in mind, most of the plans above are **recurring subscriptions** which you should cancel asap.
+
+Most of the platforms allow you to create alerts, even if you aren't paying. Create an alert with the basic data like square meters, city but nothing really more. This way you'll get slightly more alerts than there are relevant for you but you'll catch listings which didn't trigger certain criterias because of bugs etc. From my experience there were like 5-15 alerts per day on kamernet. Also if you're using emails for your alerts, make sure you check them multiple times a day. Listing are not very long on the platforms and especially good ones are in high demand, ideally you have some sort of **introduction text about yourself copy/paste ready in a note/document** so you can respond asap.
+
+### Hotels
+
+Hotels are fucking expensive. They should only be an option for you in a worst case scenario or if for example your company pays.
+
+If you're already in The Netherlands it may be cheaper to check local hotels for long term deals by visiting or calling them. Some hotels also offer registration on a long term deal.
+
+Probably doesn't matter if you're considering staying in an hotel, but Amsterdam charges 7% and 3 EUR per person per night [tourist tax](<https://www.amsterdam.nl/en/municipal-taxes/tourist-tax-(toeristenbelasting)/>).
+
+### AirBnB
+
+AirBnB and similar sites are not really liked here because they take "normal" apartments from the local population and offer them for a much higher price to tourists.
+
+The city is also going down hard on them and there are a [lot of rules](https://www.amsterdam.nl/veelgevraagd/?caseid=%7BDB74D98B-5515-4205-AB86-8AE634DD89E6%7D) which need to be met to be allowed to rent out on AirBnB, for example you're only allowed to rent out on AirBnB for a max of 30 days per year.
+
+## Finances
+
+### Bank accounts
+
+In The Netherlands you have quite a few options when it comes to banks but first you need to understand how the Dutch payment system works. There is a payment system called [iDEAL](https://https://www.ideal.nl/en/consumers/what-is-ideal/) which is being used by nearly every Dutch bank. It's basically just a neat and simple interface to pay online or in person but it's just a normal bank transfer in the background, kind of similar to what [SOFORT](https://www.sofort.com/) is. At a lot of places you'll need to use iDEAL because it's the only option available (e.g. when buying a personal OV-chipkaart online), so it's kind of a requirement to use a bank which supports iDEAL.
+
+The list of currently supported banks can be found [here](https://www.ideal.nl/en/partners/issuers/). They can be separated into two groups, the more traditional banks which have physical branches and all that or the more modern ones, so called [neobanks](https://en.wikipedia.org/wiki/Neobank), which have more modern apps, are fairly new and have no physical branches. Traditional ones would for example be [ABN AMRO](https://www.abnamro.nl/en/personal/index.html) and [Rabobank](https://www.rabobank.nl/) and the neobanks/direct banks would be [bunq](https://www.bunq.com/), [ING](https://www.ing.nl/particulier/english/index.html) and [Revolut](https://revolut.com/referral/marcma2a3f!OCT1-22-AR) **(\*)**. A quite important note: the neobanks' websites and apps are nearly all available in English, but most of the traditional banks are only available in Dutch.
+
+Also you should make sure your [IBAN](https://en.wikipedia.org/wiki/International_Bank_Account_Number) will be an actual Dutch one meaning it starts with `NL`. For example Revolut is part of iDEAL so you can pay online but you'll have an Lithuanian IBAN (starting with `LT`) which in itself is no problem because companies in the EU have to accept other countries' bank accounts and you're also insured up to 100k EUR on your bank account but for example the Dutch version of PayPal called Tikkie does only work with a Dutch IBAN.
+
+From personal experiences I can say most expats go for either ABN AMRO, ING or bunq. If you want to get a loan in the near future it may be beneficial to go to a more traditional bank, if you want the newest "banking features" and a fancy app, then something like bunq would probably something for you.
+
+Your banking card is also very important. Most businesses will accept Mastercard and Visa, especially in Amsterdam but the more rural or outside ones will sometimes only accept Maestro. So keep this in mind when choosing a bank and check out at which places you'll buy and what they accept. In my case I'm using the German bank N26 which offers a Debit Mastercard and also a Mastero.
+
+#### I'm not from Europe
+
+In case you don't know how the banking system here works, a small overview:
+
+- IBAN stands for `International Bank Account Number` and is a system which unifies the addresses for bank accounts across Europe.
+- You can easily send a _free_ money transfer pay from any EU based bank to any other EU based bank, most banks also now offer instant transfers (may not be free at some banks).
+- Most banks offer you credit cards in terms of a Mastercard or Visa but normally they are not real credit cards but debit cards. Simplified the difference is: debit card debits from you bank account, you can't exceed the amount you have, credit cards rather give you a limit which you have to pay back later. Debit cards are perfectly fine within the EU but if you want to go to the US/Asia/outside of the EU _or_ you want to rent a card then you'll probably need a "real" credit card.
+- Bank accounts are always [insured up to 100k per person per bank](https://ec.europa.eu/info/business-economy-euro/banking-and-finance/banking-union/european-deposit-insurance-scheme_en).
+- Companies in the EU have to accept foreign bank accounts from within the EU (e.g. your health insurance). Speaking from experience, quite a few companies seem to not accept them online but if you give them a call they'll nearly every time help you set it up.
+- For most banks you'll need to private your social security number (BSN in The Netherlands) either when you open the account or within a certain time frame, most of the times around one month.
+- Most European countries don't have apps like Cash App, Venmo and Zelle. The most used app across Europe to send money to friends is probably PayPal and within The Netherlands it's most definitely Tikkie.
+
+### Tikkie
+
+Tikkie is _the_ app when it comes to sending money to friends here in The Netherlands. It works fairly simple, you link your mobile phone number with your bank account. So people can send you money and you can request money from others by simply using your or their phone number. It is very commonly used for splitting bills and literally everybody has it. Like PayPal Family & Friends it's free to use for private usage and just uses iDEAL in the background.
+
+It requires you to have a Dutch, Belgian or German phone number and a bank account which is capable of using iDEAL. Also as mentioned already in the [bank accounts chapter](#bank-accounts), it also requires you to have a _Dutch_ bank account which has an IBAN starting with `NL`.
+
+### Currencies
+
+Most countries in the EU including The Netherlands use the euro.
+
+When exchanging to euro, especially from US Dollars, you should really check what the real and hidden costs are. Most banks may give you the "real" exchange rate by the European Central Bank but charge you a flat or percentage based fee for exchanging. From my experiences there are two cheap and effective ways to exchange to or from euro:
+
+1. The easiest one is by using [Wise](https://wise.com/) (formerly TransferWise). They are very transparent about what their fees are and what exchange rate they give you. Depending on what type of method for sending the money you'll use, you'll literally pay next to nothing especially compared to most banks or exchange offices. At the time of writing, a USD 1k transfer to euro will cost around USD 3.50 as a wire transfer fee and they'll additionally take around USD 5 for the actual exchange fee. Comparing the exchange rate with the official one of the ECB they have a spread of below 0.01% meaning you'll literally only pay around USD 9 for the transaction.
+
+2. If you're US based or moving across countries and are also investing then you'll probably already know and/or use [Interactive Brokers](https://www.interactivebrokers.com/en/home.php). They are pretty much the only half-way pain free solution if you want to invest but are a tax resident of multiple countries and/or have US citizenship (including green card). You can open an account with them, pay in with your currency (e.g. USD) and then convert it via the mid-day market rate to euro and send it to your bank account here in the EU.
+
+Also just never use any exchange office, most of them are scams and it's not worth the pain to check which ones aren't. The Netherlands is mostly cashless so you don't need any physical euro when arriving. Just setup your bank account beforehand or make sure you can use your foreign bank cards and then you're good to go. In case you want some physical money when arriving, just try to ask your bank in your home country if they can order euros for you. It will probably cost you a bit but then you have the peace of mind.
+
+_Important note:_ The EU is going down hard on money laundering and has some quite strict laws on it. If you enter the EU with more than 10k EUR you are legally required to declare it. You'll need to prove how you got the money and will probably also need to give a reason why you're carrying it with you. You are not required to declare it if it's under 10k but be prepared for questions if you get checked randomly and you have a couple thousands with you. Also a small tip, if you're entering with a partner: if one of you has e.g. 15k in their luggage but it's technically the money of both of you there is a chance the people at customs won't like this. So make sure you physically split the money, the same goes for cigarettes, alcohol and the rest.
+
+Also if you're transferring big sums of money from outside the EU to inside the EU, you and/or your European bank may be legally required to report this. You'll again need to prove how you got the money and it may be good to give your bank a call before hand and check with them and what their requirements are. There are a lot of horror stories where bank accounts got frozen and stuff like that. Better safe than sorry!
+
+### Taxes
+
+#### Personal income tax
+
+Probably the most interesting tax for you is the personal income tax. Comparing The Netherlands to the whole of Europe they are in the upper third when it comes to how high the personal income tax is. But excluding most of the Eastern European countries which have a really low personal income tax rate, The Netherlands are fairly "cheap". An overview of personal income tax rates and VAT can be found [here](https://en.wikipedia.org/wiki/Tax_rates_in_Europe#Summary_list).
+
+There is an [online tax calculator](https://thetax.nl) which from my experience is fairly accurate. You'll just need to enter your gross income per year/month, check if the amount is already including the holiday allowance and if you qualify for the 30% ruling. This is _excluding_ your health insurance.
+
+#### 30% ruling
+
+The 30% ruling is a tax benefit in order to attract foreign talent. It is quite the complex topic and very controversial here in The Netherlands. You should also note it is kind of [being faced out already](https://www.government.nl/topics/income-tax/shortening-30-percent-ruling), originally you got the status for 10 years, then 8 years and now it got reduced to 5 years.
+
+Some quick facts because all you should definitely check all the details with your employer and possibly a tax consultant:
+
+- It becomes active retrospectively as long as your application gets send in in time.
+- You have quite a few requirements you need to meet: e.g. a certain amount of salary, being hired already from outside The Netherlands and having lived not near The Netherlands for the last few years.
+- Your company is _technically_ not required to give the tax benefit on to you, they can legally pocket the difference.
+
+[More information](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility) can be found on the official website of the Belastingdienst (Dutch tax office).
+
+##### Holiday allowance
+
+Most European countries have a concept of holiday pay, christmas pay, a 13rd salary etc. In The Netherlands there is the concept of a holiday allowance. There are some detailed rules around it and how it's calculated which can be read [here](https://business.gov.nl/regulation/holiday-allowance/). Summarized it's basically 8% of your yearly gross salary being paid out once a year. You earn 1/12th of it each month you work for your company. So when the holiday allowance is being paid out but you've only worked there for 6 months you'll receive 50% of the 8% of your yearly gross salary.
+
+#### Capital gains tax
+
+This system is quite complex and I advice you to look it up yourself or ask your tax consultant but I'll try to summarize the main points.
+
+The Netherlands currently does not have any capital gains tax in the traditional sense. You're being taxed based on three different boxes as a private individual:
+
+- Box 1 represents income by employment, pensions and rental income of houses or apartments
+- Box 2 represents profits and dividends by having a substantial holding (>5% ownership)
+- Box 3 represents the personal wealth including shares and savings
+
+For most people box 1 and 3 will be the relevant ones, box 1 is straight forward: you'll pay taxes based on your salary. Box 3 however is a bit more complicated. The government assumes you're able to generate at least a certain percentage of interest for your wealth each year and based on this "fictive" yield you'll be taxed.
+
+To put it into a more real world example: add up your under box 3 classified assets, subtract your debts and afterwards the tax free amount (around 50.000 for 2022), this is your taxable base. There are now three different brackets on which different fictive yield percentages are set by the government: 50.000 to 100.000 is 1,82%, after this it's 4,37% until 1.000.000 and everything above is 5.53%. The calculation for the actual tax is now quite simple: you calculate for each bracket which hits your tax base how much the fictive yield is and 31% of this is the amount of tax you owe.
+
+There are a lot of fine details on how much you can deduct for what, certain benefits for green investments and a bunch more, so do your own research because this topic is really complex and highly individual.
+
+_Important note:_ If you have the 30% ruling you are probably exempt from the whole box 3 stuff.
+
+Also good to know: the Supreme Court rules this way of taxing [to be in violation of the European Convention of Human Rights](https://www.tilburguniversity.edu/magazine/supreme-court-netherlands-rules-box-3-wealth-tax) so it will probably change in some way in the coming years.
+
+## Insurances
+
+### Health insurance
+
+Everybody living or working in The Netherlands is required to have health insurance. If you've just moved here you have around **four months** to get your Dutch health insurance setup.
+
+In The Netherlands the employee needs to pay their health insurance themselves so you'll pay your premium from your _net salary_. Some other countries, like Germany, have a system in place where the employer pays your health insurance from your _gross salary_. This is **not** the case here, so keep in mind your net salary is exclusive of your health insurance premium.
+
+The price of your health insurance consists of two parts, your premium _(premie)_ and your copay _(eigen risico)_. You'll pay your premium each month but some health insurance companies also offer you to pay it every 3, 6 or 12 months for a small discount. The copay works basically in a "you have to pay a maximum of your copay per year" yourself. The minimum copay for 2022 is 385 EUR, so if your medicine/therapy costs 500 EUR, you'll have to pay 385 EUR yourself and the remaining 115 EUR and everything above that will be covered for the rest of the calendar year. Some health insurance companies allow you to set a higher copay and offer you a lower premium which may be beneficial if you're healthy and/or don't take use of your health insurance. Children are covered by their parents health insurance and have no own premium/copay.
+
+Small note, you'll have to pay for your health insurance retroactive beginning from the date of your registration, not when you actually took the insurance policy. Best to keep money aside each month until you've figured it out so you're not getting hit with a surprise bill.
+
+Most of the health insurance policies are not that different but you'll have two ways to find your ideal policy: You can checkout [each of them one by one](https://www.zorgverzekering.org/eng/insurance-companies/). Or you can use a search engine like [zorgwijzer](https://www.zorgwijzer.nl/zorgvergelijker/english#/search) or [independer](https://www.independer.nl/zorgverzekering/intro.aspx).
+
+In general what is being paid, how much, where etc. are all rather specific questions and you should research for yourself, especially if you already need medicine.
+
+More info can be found on the [iamexpat.nl](https://www.iamexpat.nl/expat-info/insurances-netherlands/dutch-health-insurance) site.
+
+If you've setup your health insurance it's also good to find a General Practitioners (GP) near you so you can register with them and have somebody you can talk to if you have questions. You'll also need to get a referral from your GP each time you need to see a specialist.
+
+In case you're from a digital stone age country like Germany where you still need to have your [blue health insurance card](https://ec.europa.eu/social/main.jsp?catId=653&langId=en) in order to see a doctor: you don't need it here. It's called a _Zorgpas_ and most health insurance companies provide you with a digital version in their app/on their website. If you're at a doctor it's enough to provide you with your BSN and say that you have Dutch health insurance. Most companies also issue physical cards if you ask them for example when you're traveling within the EU.
+
+Last but not least, you're only allowed to switch your health insurance company once a year and you'll need to do so prior to the 1st of January. An exception is when you just moved to The Netherlands then you're obviously allowed to get one immediately.
+
+### Home insurance
+
+You're not legally required to take home insurance but in my opinion it's a good tradeoff to a pay a small amount each month but in case you (or nature) fucks something up, you're covered and in my opinion it's worth my peace of mind.
+
+There are also some landlords who require the renter to take out home insurance by a clause in the rental contract, so check your contract if that's the case for you. It may also be required/relevant for you if you want to buy a property here on a mortgage.
+
+Personally I'm using [Lemonade](https://www.lemonade.com/nl/en/) because their app/website are both available fully in English, their [policy is open source](https://www.lemonade.com/nl/en/policy-two) and the same for everybody and they offer a combined home insurance and personal liability insurance. I'm paying around 6 EUR a month for both which in my books is a good deal.
+
+You can find a list of more companies offering home insurance over on the [expatica.com](https://www.expatica.com/nl/finance/insurance/home-insurance-in-the-netherlands-132194/#companies) site.
+
+Small note, if you're living in a shared apartment and/or are not [officially married/in an registered partnership](https://www.government.nl/topics/marriage-cohabitation-agreement-registered-partnership/marriage-registered-partnership-and-cohabitation-agreements) you may need to take out these insurances for each of you separately, also if you're living in the same apartment.
+
+### Personal liability insurance
+
+Pretty much the same goes for this one as for the [home insurance](#home-insurance). You're not required to take it but in my opinion it's a small amount of money which gives you peace of mind. There's a good [blog post by Lemonde](https://www.lemonade.com/nl/blog/liability-insurance-netherlands/) explaining the benefits of it but as always, you'll need to decide for yourself.
+
+{{< refLinkDisclaimer >}}
+
+---
+
+---
+
+---
+
+- Lemonade referral
+- bank referrals
+
+---
+
+- check Euros vs EUR vs Euro
+- check . or , when using numbers
+- when to write out numbers or not
+- unify the `_Important note:_` one
