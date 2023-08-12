@@ -3,9 +3,9 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://marcmogdanz.de/",
   author: "Marc Mogdanz",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "Tech blog by Marc Mogdanz.",
   title: "Marc Mogdanz",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "", // TODO
   lightAndDarkMode: true,
   postPerPage: 5,
 };
