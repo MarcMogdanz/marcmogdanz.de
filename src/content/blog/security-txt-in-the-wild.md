@@ -1,6 +1,6 @@
 ---
 title: "Security.txt in the Wild"
-postSlug: security-txt-in-the-wild
+slug: security-txt-in-the-wild
 description: Crawling the Alexa Top 1000 websites and checking their security.txt file
 pubDatetime: 2021-05-31T12:00:00+00:00
 featured: false
