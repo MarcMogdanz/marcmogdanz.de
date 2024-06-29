@@ -4,24 +4,18 @@ import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
-import mdx from "@astrojs/mdx";
+import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://marcmogdanz.de/",
+  site: SITE.website,
   integrations: [
     tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
+      applyBaseStyles: false,
     }),
     react(),
     sitemap(),
-    mdx(),
   ],
-  experimental: {
-    assets: true,
-  },
   markdown: {
     remarkPlugins: [
       remarkToc,
@@ -36,11 +30,11 @@ export default defineConfig({
       theme: "one-dark-pro",
       wrap: true,
     },
-    extendDefaultPlugins: true,
   },
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
   },
+  scopedStyleStrategy: "where",
 });
