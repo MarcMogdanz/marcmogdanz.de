@@ -12,7 +12,15 @@ const { noMarginTop = false } = Astro.props;
 ---
 
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
-  <Hr noPadding />
+  <div class="message-wrapper hidden opacity-0">
+    <p class="message">
+      <span class="first">born to be a backend dev,</span>
+      <span class="second">but forced to write react</span>
+    </p>
+  </div>
+
+  <Hr noPadding id="footer-separator" />
+
   <div class="footer-wrapper">
     <Socials centered />
     <div class="copyright-wrapper">
@@ -47,4 +55,61 @@ const { noMarginTop = false } = Astro.props;
   .link {
     @apply underline decoration-dashed underline-offset-4 hover:text-skin-accent;
   }
+
+  .message-wrapper {
+    @apply w-full bg-gray-100 py-4;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-play-state: paused;
+  }
+  .message-wrapper .message {
+    @apply flex flex-col items-center justify-center px-4 text-center sm:flex-row;
+  }
+  .message .first {
+    @apply mb-2 font-semibold sm:mb-0 sm:mr-2;
+  }
+  .message .second {
+    @apply text-gray-600;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 </style>
+
+<script>
+  const currentPath = window.location.pathname;
+  const isHome = currentPath === "/" || currentPath === "";
+
+  const messageWrapperElement = document.querySelector(".message-wrapper");
+  const secondPartElement = document.querySelector(".message .second");
+
+  const funnyParts = [
+    "forced to write react",
+    "forced to be fullstack",
+    "forced to be a jack of all trades",
+    "forced to debug hydration errors",
+  ];
+
+  if (isHome) {
+    document.querySelector("#footer-separator").style.display = "none";
+
+    const randomFunnyPart =
+      funnyParts[Math.floor(Math.random() * funnyParts.length)];
+
+    if (secondPartElement) {
+      secondPartElement.textContent = randomFunnyPart;
+    }
+
+    if (messageWrapperElement) {
+      messageWrapperElement.classList.remove("hidden");
+      messageWrapperElement.style.animationPlayState = "running";
+      messageWrapperElement.style.opacity = "1";
+    }
+  }
+</script>
