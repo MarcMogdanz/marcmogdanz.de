@@ -1,9 +1,9 @@
 ---
-import { LOCALE, SITE } from "@config";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import { SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
-
-const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export interface Props {
   title?: string;
@@ -19,25 +19,19 @@ export interface Props {
 const {
   title = SITE.title,
   author = SITE.author,
-  description = SITE.desc,
-  ogImage = SITE.ogImage,
+  description,
+  ogImage,
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
 } = Astro.props;
 
-const socialImageURL = new URL(
-  ogImage ?? SITE.ogImage ?? "og.png",
-  Astro.url.origin
-).href;
+const socialImageURL = new URL(ogImage ?? "og.png", Astro.url.origin).href;
 ---
 
 <!doctype html>
-<html
-  lang=`${LOCALE.lang ?? "en"}`
-  class={`${scrollSmooth && "scroll-smooth"}`}
->
+<html lang="en" class={`${scrollSmooth && "scroll-smooth"}`}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -86,30 +80,20 @@ const socialImageURL = new URL(
     <!-- Bunny Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net" />
     <link
-      href="https://fonts.bunny.net/css?family=ibm-plex-mono|ibm-plex-sans"
+      href="https://fonts.bunny.net/css?family=ibm-plex-mono"
       rel="stylesheet"
     />
 
-    <meta name="theme-color" content="" />
-
-    {
-      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
-      // include google-site-verification tag in the heading
-      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
-      googleSiteVerification && (
-        <meta
-          name="google-site-verification"
-          content={googleSiteVerification}
-        />
-      )
-    }
-
     <ViewTransitions />
-
-    <script is:inline src="/toggle-theme.js"></script>
   </head>
-  <body>
-    <slot />
+  <body class="mx-auto flex min-h-screen max-w-[720px] flex-col px-4 md:px-0">
+    <Header />
+
+    <div class="flex-1 pb-4 pt-8">
+      <slot />
+    </div>
+
+    <Footer />
 
     <script
       is:inline

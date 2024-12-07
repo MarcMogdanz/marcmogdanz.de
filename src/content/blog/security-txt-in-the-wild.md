@@ -3,7 +3,6 @@ title: "Security.txt in the Wild"
 slug: security-txt-in-the-wild
 description: Crawling the Alexa Top 1000 websites and checking their security.txt file
 pubDatetime: 2021-05-31T12:00:00+00:00
-featured: false
 tags: ["JavaScript", "TypeScript", "Security.txt"]
 ogImage: "/posts/security-txt-in-the-wild/cover.png"
 ---
