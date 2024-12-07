@@ -1,6 +1,7 @@
 ---
 import { SITE } from "@config";
 import Layout from "./Layout.astro";
+import Main from "./Main.astro";
 
 export interface Props {
   frontmatter: {
@@ -13,11 +14,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
-  <main>
-    <section class="prose mb-28 max-w-3xl prose-img:border-0">
-      <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
-
-      <slot />
-    </section>
-  </main>
+  <Main pageTitle={frontmatter.title}>
+    <slot />
+  </Main>
 </Layout>
