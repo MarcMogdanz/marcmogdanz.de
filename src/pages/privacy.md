@@ -5,7 +5,7 @@ title: "Privacy"
 
 ## Hosting
 
-This website is being hosted by Vercel, the Privacy Policy of Vercel can be found here: [https://vercel.com/legal/privacy-policy](https://vercel.com/legal/privacy-policy)
+This website is being hosted by Cloudflare, the Privacy Policy of Cloudflare can be found here: [https://www.cloudflare.com/privacypolicy/](https://www.cloudflare.com/privacypolicy/).
 
 ## Tracking
 
